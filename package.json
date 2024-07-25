@@ -1,7 +1,7 @@
 {
   "name": "maneko",
   "version": "1.0.0",
-  "description": "Website for XXXXXXX",
+  "description": "Website for Mangoflow Studio",
   "main": "webpack.config.js",
   "scripts": {
     "watch": "webpack --config webpack.config.mjs --progress --mode development",
@@ -33,6 +33,6 @@
     "jquery": "^3.7.1",
     "swiper": "^11.1.4"
   },
-  "author": "Maneko - Sergio",
+  "author": "Spanioulis.dev",
   "license": "ISC"
 }

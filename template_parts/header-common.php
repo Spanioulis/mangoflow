@@ -3,10 +3,10 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Maneko Projects">
+    <meta name="author" content="Spanioulis">
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="keywords" content="">
-    <meta name="theme-color" content="#efefef">
+    <meta name="theme-color" content="#f4bc43">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
