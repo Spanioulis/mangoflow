@@ -2,7 +2,7 @@
 $fs-14: clamp(9px, 1.2vw, 14px); // 14px
 $fs-18: clamp(11px, 1.8vw, 18px); // 18px
 $fs-20: clamp(12px, 2vw, 20px); // 20px
-$fs-25: clamp(15px, 2.5vw, 25px); // 25px
+$fs-24: clamp(15px, 2.4vw, 24px); // 24px
 $fs-30: clamp(18px, 3vw, 30px); // 30px
 $fs-35: clamp(21px, 3.5vw, 35px); // 35px
 $fs-45: clamp(27px, 4.5vw, 45px); // 45px
@@ -32,106 +32,20 @@ $lh-130: clamp(120px, 9.286vw, 130px); // 130px
 $lh-285: clamp(260px, 20.357vw, 285px); // 285px
 $lh-300: clamp(280px, 21.428vw, 300px); // 300px
 
-$font-xs: 1.4rem;
-$font-s: 1.6rem;
-$font-n: 1.8rem;
-$font-b: 2.4rem;
-$font-p-small: 2.8rem;
-$font-p-big: 3.4rem;
-$font-h4: 4rem;
-$font-h3: 4.6rem;
-$font-h2: 5.6rem;
-$font-h1: 7rem;
-$font-h1-big: 8rem;
-
-@mixin font-xs {
-    font-size: $font-xs;
-}
-
-@mixin font-s {
-    font-size: $font-s;
-    @include for-phone {
-        font-size: $font-xs;
-    }
-}
-
-@mixin font-n {
-    font-size: $font-n;
-    @include for-phone {
-        font-size: $font-s;
-    }
-}
-
-@mixin font-b {
-    font-size: $font-b;
-    @include for-phone {
-        font-size: $font-n;
-    }
-}
-
-@mixin font-p-small {
-    font-size: $font-p-small;
-    @include for-phone {
-        font-size: $font-b;
-    }
-}
-
-@mixin font-p-big {
-    font-size: $font-p-big;
-    @include for-phone {
-        font-size: $font-p-small;
-    }
-}
-
-@mixin font-h4 {
-    font-size: $font-h4;
-    @include for-phone {
-        font-size: $font-p-big;
-    }
-}
-
-@mixin font-h3 {
-    font-size: $font-h3;
-    @include for-phone {
-        font-size: $font-h4;
-    }
-}
-
-@mixin font-h2 {
-    font-size: $font-h2;
-    @include for-phone {
-        font-size: $font-h3;
-    }
-}
-
-@mixin font-h1 {
-    font-size: $font-h1;
-    @include for-phone {
-        font-size: $font-h2;
-    }
-}
-
-@mixin font-h1-big {
-    font-size: $font-h1-big;
-    @include for-phone {
-        font-size: $font-h2;
-    }
-}
-
 @mixin placeholder {
-    &::placeholder {
-        @content;
-    }
-    ::-webkit-input-placeholder {
-        @content;
-    }
-    :-moz-placeholder {
-        @content;
-    }
-    ::-moz-placeholder {
-        @content;
-    }
-    :-ms-input-placeholder {
-        @content;
-    }
+  &::placeholder {
+    @content;
+  }
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
 }

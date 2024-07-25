@@ -1,4 +1,6 @@
-$ff-gotham: 'Gotham';
+$ff-gotham: "Gotham";
+$ff-recoleta: "Recoleta";
+$ff-agrandir: "Agrandir";
 
 $fw-light: 300;
 $fw-regular: normal;
@@ -7,19 +9,41 @@ $fw-bold: 700;
 
 // GOTHAM ------
 @font-face {
-    font-family: $ff-gotham;
-    font-weight: $fw-medium;
-    src: url('../fonts/Gotham-Medium.otf') format('opentype');
+  font-family: $ff-gotham;
+  font-weight: $fw-medium;
+  src: url("../fonts/Gotham-Medium.otf") format("opentype");
+}
+
+// AGRANDIR ------
+@font-face {
+  font-family: $ff-agrandir;
+  font-weight: $fw-regular;
+  src: url("../fonts/Agrandir-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: $ff-agrandir;
+  font-weight: $fw-bold;
+  src: url("../fonts/Agrandir-Bold.otf") format("opentype");
 }
 
 // RECOLETA -------
-// @font-face {
-//     font-family: $ff-recoleta;
-//     src: url('../fonts/Recoleta-Light.eot');
-//     src: url('../fonts/Recoleta-Light.eot?#iefix') format('embedded-opentype'),
-//         url('../fonts/Recoleta-Light.woff2') format('woff2'), url('../fonts/Recoleta-Light.woff') format('woff'),
-//         url('../fonts/Recoleta-Light.ttf') format('truetype');
-//     font-weight: $fw-light;
-//     font-style: normal;
-//     //font-display: swap;
-// }
+@font-face {
+  font-family: $ff-recoleta;
+  font-weight: $fw-light;
+  src: url("../fonts/Recoleta-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: $ff-recoleta;
+  font-weight: $fw-regular;
+  src: url("../fonts/Recoleta-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: $ff-recoleta;
+  font-weight: $fw-medium;
+  src: url("../fonts/Recoleta-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: $ff-recoleta;
+  font-weight: $fw-bold;
+  src: url("../fonts/Recoleta-Bold.otf") format("opentype");
+}

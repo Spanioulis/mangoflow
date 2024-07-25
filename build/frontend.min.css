@@ -7,6 +7,36 @@
   font-weight: 500;
   src: url(../a52599fa8cce74bab773.otf) format("opentype");
 }
+@font-face {
+  font-family: "Agrandir";
+  font-weight: normal;
+  src: url(../ee9ba17d94a4b7dee02f.otf) format("opentype");
+}
+@font-face {
+  font-family: "Agrandir";
+  font-weight: 700;
+  src: url(../fd3a200fdcff3bfea9f6.otf) format("opentype");
+}
+@font-face {
+  font-family: "Recoleta";
+  font-weight: 300;
+  src: url(../b5552a0004a2f900b286.otf) format("opentype");
+}
+@font-face {
+  font-family: "Recoleta";
+  font-weight: normal;
+  src: url(../0fd5d514b9ba701313c1.otf) format("opentype");
+}
+@font-face {
+  font-family: "Recoleta";
+  font-weight: 500;
+  src: url(../891a34872d45619abb8e.otf) format("opentype");
+}
+@font-face {
+  font-family: "Recoleta";
+  font-weight: 700;
+  src: url(../29b7faabc2d0ec3ef780.otf) format("opentype");
+}
 /****************************************************************
 / Base contains TAGS general styling
 /****************************************************************/
@@ -14,7 +44,7 @@
   navigation: auto;
 }
 html {
-  font-family: "Gotham";
+  font-family: "Agrandir";
 }
 
 body {
@@ -41,6 +71,7 @@ p a {
 }
 
 p {
+  line-height: 1.5;
   text-wrap: pretty;
 }
 
@@ -51,6 +82,7 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+  font-family: "Recoleta";
 }
 
 /***
@@ -281,15 +313,22 @@ meter {
 }
 
 .header {
-  background-color: #eeeeee;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #f4bc43;
   color: black;
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
+  position: fixed;
+  width: 100%;
 }
 .header__logo {
   display: grid;
   place-items: center;
+}
+.header__logo > h1 {
+  font-weight: 500;
+  font-size: clamp(15px, 2.4vw, 24px);
 }
 
 .mainmenu {
@@ -325,7 +364,7 @@ meter {
   }
   .mainmenu.expanded {
     background-color: hsl(0, 50%, 50%);
-    font-size: clamp(15px, 2.5vw, 25px);
+    font-size: clamp(15px, 2.4vw, 24px);
     height: 100vh;
     padding: 5vw;
     pointer-events: all;
@@ -421,7 +460,7 @@ meter {
 }
 
 .template-home {
-  padding: 50px;
+  padding: 110px 50px 50px 50px;
 }
 
 /*# sourceMappingURL=frontend.min.css.map*/

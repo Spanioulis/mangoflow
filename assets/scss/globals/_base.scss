@@ -8,7 +8,8 @@
 
 html {
   // color-scheme: dark light;
-  font-family: $ff-gotham;
+  // font-family: $ff-gotham;
+  font-family: $ff-agrandir;
 }
 
 body {
@@ -38,6 +39,7 @@ p a {
 }
 
 p {
+  line-height: 1.5;
   text-wrap: pretty;
 }
 
@@ -48,4 +50,5 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+  font-family: $ff-recoleta;
 }

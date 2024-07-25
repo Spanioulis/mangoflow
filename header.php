@@ -1,7 +1,7 @@
 <?php get_template_part('template_parts/header-common'); ?>
 
 <header id="header" class="header" role="banner">
-    <a class="header__logo" id="logo" href="<?= get_home_url(); ?>">Mangoflow Studio</a>
+    <a class="header__logo" id="logo" href="<?= get_home_url(); ?>"><h1>Mangoflow Studio</h1></a>
     <!-- Páginas (menú) -->
     <nav class="mainmenu" id="main-menu">
         <?= wp_nav_menu(['theme_location'=> 'header-menu', 'container' => false, 'menu_class' => 'main-menu']); ?>
