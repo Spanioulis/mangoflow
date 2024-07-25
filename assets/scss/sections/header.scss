@@ -1,0 +1,12 @@
+.header {
+  background-color: #eeeeee;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+
+  &__logo {
+    display: grid;
+    place-items: center;
+  }
+}
