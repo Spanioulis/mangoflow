@@ -321,6 +321,7 @@ meter {
   padding: 20px 50px;
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 .header__logo {
   display: grid;
@@ -468,6 +469,7 @@ main.template-home > figure {
   bottom: 20px;
   position: fixed;
   right: 10px;
+  z-index: 100;
 }
 main.template-home > figure img {
   max-height: 95px;
@@ -485,8 +487,17 @@ main.template-home > figure img {
     filter: drop-shadow(0px 1px 2px black);
   }
 }
+main.template-home .s-title {
+  padding-top: 100px;
+  display: grid;
+  place-items: center;
+}
+main.template-home .s-title > h1 {
+  font-size: clamp(78px, 13vw, 130px);
+  font-family: "Agrandir";
+}
 main.template-home .s-cover {
-  padding: 110px 50px 50px 50px;
+  padding: 50px;
 }
 main.template-home .s-cover > p {
   font-size: clamp(15px, 2.4vw, 24px);

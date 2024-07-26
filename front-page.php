@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 
 <main class="template-home">
-    <h3><?php the_content(''); ?></h3>
+    <!-- Section #title -->
+    <section class="s-title">
+        <h1>mangoflow studio</h1>
+    </section>
+
     <!-- Section #cover -->
     <section class="s-cover js-1cp">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates odit totam libero. Nesciunt rem impedit voluptatem tenetur amet! Animi, minus repellat recusandae aliquid doloremque a dicta quos quasi qui cumque?
