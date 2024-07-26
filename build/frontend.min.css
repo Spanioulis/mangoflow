@@ -461,7 +461,6 @@ meter {
 
 main.template-home {
   background-color: #efefef;
-  padding: 110px 50px 50px 50px;
   min-height: 100dvh;
 }
 main.template-home > figure {
@@ -486,8 +485,24 @@ main.template-home > figure img {
     filter: drop-shadow(0px 1px 2px black);
   }
 }
+main.template-home .s-cover {
+  padding: 110px 50px 50px 50px;
+}
 main.template-home .s-cover > p {
-  font-size: clamp(12px, 2vw, 20px);
+  font-size: clamp(15px, 2.4vw, 24px);
+  max-width: 900px;
+}
+main.template-home .s-image {
+  position: relative;
+}
+main.template-home .s-image__overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=frontend.min.css.map*/
