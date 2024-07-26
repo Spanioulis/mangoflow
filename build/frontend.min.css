@@ -467,7 +467,7 @@ main.template-home {
 main.template-home > figure {
   animation: boxshadow 2s ease-in-out infinite;
   bottom: 20px;
-  position: absolute;
+  position: fixed;
   right: 10px;
 }
 main.template-home > figure img {
