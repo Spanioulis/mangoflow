@@ -1,7 +1,8 @@
 <?php get_template_part('template_parts/header-common'); ?>
 
 <header id="header" class="header" role="banner">
-    <a class="header__logo" id="logo" href="<?= get_home_url(); ?>"><h1>Mangoflow Studio</h1></a>
+    <a class="header__name" id="logo" href="<?= get_home_url(); ?>"><h3>Valeria Gereda</h3></a>
+    <a class="header__logo" id="logo" href="<?= get_home_url(); ?>"><p>mangoflow studio</p></a>
     <!-- Páginas (menú) -->
     <nav class="mainmenu" id="main-menu">
         <?= wp_nav_menu(['theme_location'=> 'header-menu', 'container' => false, 'menu_class' => 'main-menu']); ?>

@@ -3,7 +3,7 @@
 <main class="template-home">
     <!-- Section #title -->
     <section class="s-title">
-        <h1>mangoflow studio</h1>
+        <h1>Hey!!</h1>
     </section>
 
     <!-- Section #cover -->

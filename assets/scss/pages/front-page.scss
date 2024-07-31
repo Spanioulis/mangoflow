@@ -1,6 +1,4 @@
 main.template-home {
-  background-color: #efefef;
-
   min-height: 100dvh;
 
   // TODO: Send to section style
@@ -30,13 +28,12 @@ main.template-home {
   }
 
   .s-title {
-    padding-top: 100px;
+    padding-top: 150px;
     display: grid;
-    place-items: center;
+    padding-left: 50px;
 
     > h1 {
       font-size: $fs-130;
-      font-family: "Agrandir";
     }
   }
 
@@ -52,18 +49,14 @@ main.template-home {
   }
 
   .s-image {
-    position: relative;
-    max-height: 900px;
     height: 700px;
-    opacity: 80%;
+    max-height: 900px;
 
     view-timeline-name: --image;
     view-timeline-axis: block;
-
     animation-timeline: --image;
     animation-name: show;
     animation-fill-mode: both;
-
     animation-range: entry 25% cover 50%;
 
     @keyframes show {

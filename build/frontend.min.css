@@ -44,6 +44,7 @@
   navigation: auto;
 }
 html {
+  background-color: #efefef;
   font-family: "Agrandir";
 }
 
@@ -313,9 +314,7 @@ meter {
 }
 
 .header {
-  background-color: #ffffff;
-  box-shadow: 0px 0px 10px #f4bc43;
-  color: black;
+  background-color: #efefef;
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
@@ -323,22 +322,40 @@ meter {
   width: 100%;
   z-index: 100;
 }
-.header__logo {
-  display: grid;
-  place-items: center;
-}
-.header__logo > h1 {
-  font-weight: 500;
+.header__name {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
   font-size: clamp(15px, 2.4vw, 24px);
+  font-weight: 500;
+  align-items: center;
+}
+.header__logo {
+  animation-name: shrink;
+  animation-timeline: scroll();
+  animation-range: 0 350px;
+  animation-fill-mode: both;
+}
+@keyframes shrink {
+  from {
+    font-size: clamp(54px, 9vw, 90px);
+  }
+  to {
+    font-size: clamp(21px, 3.5vw, 35px);
+  }
 }
 
 .mainmenu {
   align-items: center;
   display: flex;
-  font-size: 14px;
-  font-weight: 700;
-  gap: 3rem;
+  flex-basis: 0;
+  flex-grow: 1;
+  font-size: clamp(10px, 1.6vw, 16px);
+  font-weight: 300;
+  gap: 2rem;
+  justify-content: flex-end;
   line-height: clamp(16px, 1.428vw, 20px);
+  text-transform: uppercase;
 }
 .mainmenu ul {
   display: flex;
@@ -461,7 +478,6 @@ meter {
 }
 
 main.template-home {
-  background-color: #efefef;
   min-height: 100dvh;
 }
 main.template-home > figure {
@@ -488,13 +504,12 @@ main.template-home > figure img {
   }
 }
 main.template-home .s-title {
-  padding-top: 100px;
+  padding-top: 150px;
   display: grid;
-  place-items: center;
+  padding-left: 50px;
 }
 main.template-home .s-title > h1 {
   font-size: clamp(78px, 13vw, 130px);
-  font-family: "Agrandir";
 }
 main.template-home .s-cover {
   padding: 50px;
@@ -504,10 +519,8 @@ main.template-home .s-cover > p {
   max-width: 900px;
 }
 main.template-home .s-image {
-  position: relative;
-  max-height: 900px;
   height: 700px;
-  opacity: 80%;
+  max-height: 900px;
   view-timeline-name: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
