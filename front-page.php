@@ -11,7 +11,8 @@
         Temporibus quae debitis asperiores ducimus numquam laudantium dicta quos voluptatum tempore, in, itaque harum laboriosam error inventore voluptate accusantium saepe dolorum non necessitatibus nulla? Aliquam officiis officia est possimus quam.</p>
     </section>
 
-    <!-- Section #image -->
+    <!-- Section #main-image -->
+    <!-- TODO: Add ACF to background-image -->
     <section class="s-image bg-cover" style="background-image: url('<?php echo get_template_directory_uri(  ); ?>/assets/img/virtual-assistant-1.jpg')">
     </section>
 
