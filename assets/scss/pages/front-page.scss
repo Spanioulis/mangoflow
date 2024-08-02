@@ -1,5 +1,12 @@
 main.template-home {
   min-height: 100dvh;
+  @include section-spacing;
+
+  > section {
+    > h2 {
+      font-size: $fs-90;
+    }
+  }
 
   // TODO: Send to section style
   > figure {
@@ -27,21 +34,13 @@ main.template-home {
     }
   }
 
-  .s-title {
-    padding-top: 150px;
-    display: grid;
-    padding-left: 50px;
-
-    > h1 {
-      font-size: $fs-130;
-    }
+  .s-main-title {
+    font-size: $fs-130;
+    padding: 150px 0px 0px 50px;
   }
 
   // TODO: chage name
   .s-cover {
-    // TODO: Create @mixin
-    padding: 50px;
-
     > p {
       font-size: $fs-24;
       max-width: 900px;
