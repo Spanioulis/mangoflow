@@ -518,7 +518,7 @@ meter {
   z-index: 100;
 }
 .mango-widget img {
-  max-height: 95px;
+  max-height: 75px;
   height: auto;
   width: 100%;
 }

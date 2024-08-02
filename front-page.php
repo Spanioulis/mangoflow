@@ -48,7 +48,7 @@
         <h2>Contacto</h2>
     </section>
 
-    <!-- TODO: Create section template_part -->
+    <!-- 🥭 Mango Widget -->
     <?php echo get_template_part('template_parts/mango-widget'); ?>
 </main>
 
