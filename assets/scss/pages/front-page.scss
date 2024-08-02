@@ -8,32 +8,6 @@ main.template-home {
     }
   }
 
-  // TODO: Send to section style
-  > figure {
-    animation: boxshadow 2s ease-in-out infinite;
-    bottom: 20px;
-    position: fixed;
-    right: 10px;
-    z-index: 100;
-
-    img {
-      max-height: 95px;
-      height: auto;
-      width: 100%;
-    }
-    @keyframes boxshadow {
-      0% {
-        filter: drop-shadow(0px 1px 2px black);
-      }
-      50% {
-        filter: drop-shadow(0px 5px 5px black);
-      }
-      100% {
-        filter: drop-shadow(0px 1px 2px black);
-      }
-    }
-  }
-
   .s-main-title {
     font-size: $fs-130;
     padding: 150px 0px 0px 50px;

@@ -49,11 +49,7 @@
     </section>
 
     <!-- TODO: Create section template_part -->
-    <figure>
-        <a href="mailto:valeriagereda@hotmail.com" target="_blank" rel="noopener noreferrer">
-            <img src="<?php echo get_template_directory_uri(  ); ?>/assets/img/mangoflow.png" alt="Mangoflow Studio logo">  
-        </a>
-    </figure>
+    <?php echo get_template_part('template_parts/mango-widget'); ?>
 </main>
 
 <?php get_footer(); ?>
