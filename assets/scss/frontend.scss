@@ -1,21 +1,22 @@
 // Fonts and variables
-@import 'settings/_settings';
+@import "settings/_settings";
 
 // Core
-@import 'globals/base';
-@import 'globals/reset';
+@import "globals/base";
+@import "globals/reset";
 
 // Mixins
-@import 'mixins/mixins';
+@import "mixins/mixins";
 
 // Sections ----------------
-@import 'sections/header';
-@import 'sections/menu';
-@import 'sections/footer';
+@import "sections/header";
+@import "sections/menu";
+@import "sections/footer";
+@import "sections/s-services";
 
 // Components ----------------
-@import 'components/buttons';
-@import 'components/c-hamburger';
+@import "components/buttons";
+@import "components/c-hamburger";
 
 // Pages ----------------
-@import 'pages/front-page';
+@import "pages/front-page";
