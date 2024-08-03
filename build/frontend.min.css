@@ -571,9 +571,54 @@ main.template-home .s-main-title {
   font-size: clamp(78px, 13vw, 130px);
   padding: 150px 0px 0px 50px;
 }
-main.template-home .s-cover > p {
+main.template-home .s-text > p {
   font-size: clamp(15px, 2.4vw, 24px);
   max-width: 900px;
+}
+main.template-home .swiper {
+  max-width: 900px;
+  height: 500px;
+  background-color: turquoise;
+}
+main.template-home .swiper .swiper-slide {
+  display: grid;
+  place-items: center;
+}
+main.template-home .swiper .swiper-button-prev {
+  align-items: center;
+  color: black;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  width: 150px;
+}
+main.template-home .swiper .swiper-button-prev svg {
+  transform: rotate(250deg);
+  transition: color 0.3s ease;
+}
+main.template-home .swiper .swiper-button-prev:hover svg {
+  color: #f4bc43;
+}
+main.template-home .swiper .swiper-button-prev:after {
+  content: "";
+}
+main.template-home .swiper .swiper-button-next {
+  align-items: center;
+  color: black;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  width: 150px;
+}
+main.template-home .swiper .swiper-button-next svg {
+  transform: rotate(70deg);
+  transition: color 0.3s ease;
+}
+main.template-home .swiper .swiper-button-next:hover svg {
+  color: #f4bc43;
+}
+main.template-home .swiper .swiper-button-next:after {
+  content: "";
 }
 
 /*# sourceMappingURL=frontend.min.css.map*/

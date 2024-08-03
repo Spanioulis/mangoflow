@@ -13,11 +13,71 @@ main.template-home {
     padding: 150px 0px 0px 50px;
   }
 
-  // TODO: chage name
-  .s-cover {
+  .s-text {
     > p {
       font-size: $fs-24;
       max-width: 900px;
+    }
+  }
+
+  .swiper {
+    max-width: 900px;
+    height: 500px;
+    background-color: turquoise;
+
+    .swiper-slide {
+      display: grid;
+      place-items: center;
+    }
+
+    // Button Prev
+    .swiper-button-prev {
+      align-items: center;
+      color: black;
+      display: flex;
+      height: 150px;
+      justify-content: center;
+      width: 150px;
+
+      svg {
+        transform: rotate(250deg);
+        transition: color 0.3s ease;
+      }
+
+      &:hover {
+        svg {
+          color: $clr-mango;
+        }
+      }
+
+      &:after {
+        content: ""; // Remueve el contenido de texto por defecto
+      }
+    }
+
+    // Button Next
+    .swiper-button-next {
+      align-items: center;
+      color: black;
+      display: flex;
+      height: 150px;
+      justify-content: center;
+      width: 150px;
+
+      svg {
+        transform: rotate(70deg);
+        transition: color 0.3s ease;
+      }
+
+      &:hover {
+        svg {
+          color: $clr-mango;
+        }
+      }
+
+      &:after {
+        content: ""; // Remueve el contenido de texto por defecto
+      }
     }
   }
 }
