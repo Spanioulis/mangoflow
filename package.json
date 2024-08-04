@@ -1,7 +1,7 @@
 {
   "name": "maneko",
   "version": "1.0.0",
-  "description": "Website for Mangoflow Studio",
+  "description": "Website for Mangoflow Etudio",
   "main": "webpack.config.js",
   "scripts": {
     "watch": "webpack --config webpack.config.mjs --progress --mode development",
