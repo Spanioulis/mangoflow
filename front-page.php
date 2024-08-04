@@ -47,14 +47,43 @@
         <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
+                <!-- Aldi -->
+                <div class="swiper-slide">
+                    <article>
+                        <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-aldi.svg" alt="">
+                        <p>Dpto. Compras</p>
+                        <p>Junio 2023 - Act.</p>
+                    </article>
+                </div>
+                <!-- Lidl -->
+                <div class="swiper-slide">
+                    <article>
+                        <img src="<?= get_template_directory_uri(  ); ?>/assets/img/.svg" alt="Falta añadir logo Lidl">
+                        <p>Dpto. Compras</p>
+                        <p>Junio 2022 - Mayo 2023</p>
+                    </article>
+                </div>
+                <!-- Novartis -->
+                <div class="swiper-slide">
+                    <article>
+                        <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-novartis.svg" alt="Falta añadir logo Lidl">
+                        <p>Dpto. Compras</p>
+                        <p>Enero 2022 - Junio 2022</p>
+                    </article>
+                </div>
+                <!-- Bimbo -->
+                <div class="swiper-slide">
+                    <article>
+                        <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-bimbo.svg" alt="">
+                        <p>Dpto. Compras</p>
+                        <p>Abril 2018 - Enero 2022</p>
+                    </article>
+                </div>
+
+
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
 
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev">
@@ -69,7 +98,7 @@
             </div>
 
             <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <!-- <div class="swiper-scrollbar"></div> -->
         </div>
     </section>
 
