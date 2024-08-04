@@ -407,6 +407,15 @@ meter {
   }
 }
 
+.s-about__text {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(12px, 2vw, 20px);
+  gap: 1rem;
+  margin-bottom: 2rem;
+  max-width: 650px;
+}
+
 .s-image {
   height: 700px;
   max-height: 900px;
