@@ -431,33 +431,49 @@ meter {
 .s-services__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "image1 image2" "image1 image3";
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "image1 image2" "image1 image3" "image4 image5";
   gap: 1rem;
-  max-height: 700px;
+  max-height: 1000px;
 }
-.s-services__grid > figure {
+.s-services__grid .image1 {
+  grid-area: image1;
+}
+.s-services__grid .image2 {
+  grid-area: image2;
+}
+.s-services__grid .image3 {
+  grid-area: image3;
+}
+.s-services__grid .image4 {
+  grid-area: image4;
+}
+.s-services__grid .image5 {
+  grid-area: image5;
+}
+.s-services__figure {
+  position: relative;
   border-radius: 10px;
-  overflow: hidden;
+  cursor: pointer;
   filter: grayscale(90%);
+  overflow: hidden;
+  transition: filter 0.3s ease-in-out;
 }
-.s-services__grid > figure > img {
+.s-services__figure:hover {
+  filter: none;
+}
+.s-services__figure > img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: auto;
 }
-.s-services__grid .image1 {
-  background-color: crimson;
-  grid-area: image1;
-}
-.s-services__grid .image2 {
-  background-color: blueviolet;
-  grid-area: image2;
-}
-.s-services__grid .image3 {
-  background-color: lime;
-  grid-area: image3;
+.s-services__overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
 }
 
 .btn, .btn--header {

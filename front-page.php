@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 <main class="template-home">
-    <!-- Section #title -->
+    <!-- Section #título -->
     <h1 class="s-main-title js-1cp">Hey!!</h1>
 
-    <!-- Section #cover -->
+    <!-- Section #texto -->
     <section class="s-text js-1cp">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates odit totam libero. Nesciunt rem impedit voluptatem tenetur amet! Animi, minus repellat recusandae aliquid doloremque a dicta quos quasi qui cumque?
         Voluptatem magnam, minus omnis ea, exercitationem quasi quis commodi illo cumque porro id voluptas expedita distinctio eius corporis odit et illum minima officiis dolore officia a voluptatum ab! Ratione, perferendis.
@@ -26,20 +26,32 @@
     <section class="s-services" id="services">
         <h2>Servicios</h2>
 
+        <!-- TODO: Create section or component services grid (¿?) -->
         <div class="s-services__grid">
-            <figure class="image1">
+            <figure class="s-services__figure image1">
+                <div class="s-services__overlay"></div>
                 <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-6.jpg" alt="Agenda y mano de mujer">
             </figure>
-            <figure class="image2">
+            <figure class="s-services__figure image2">
+                <div class="s-services__overlay"></div>
                 <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-7.jpg" alt="Agenda y mano de mujer">
             </figure>
-            <figure class="image3">
+            <figure class="s-services__figure image3">
+                <div class="s-services__overlay"></div>
                 <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-5.jpg" alt="Agenda y mano de mujer">
+            </figure>
+            <figure class="s-services__figure image4">
+                <div class="s-services__overlay"></div>
+                <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-8.jpg" alt="Agenda y mano de mujer">
+            </figure>
+            <figure class="s-services__figure image5">
+                <div class="s-services__overlay"></div>
+                <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-9.jpg" alt="Agenda y mano de mujer">
             </figure>
         </div>
     </section>
 
-    <!-- Sobre mí -->
+    <!-- Section #sobre mí -->
     <section class="s-about" id="about-us">
         <h2>Sobre mí</h2>
 
@@ -47,7 +59,7 @@
         <?php echo get_template_part('template_parts/swiper' ); ?>
     </section>
 
-    <!-- Contacto -->
+    <!-- Section #contacto -->
     <section class="s-contact" id="contact">
         <h2>Contacto</h2>
     </section>
