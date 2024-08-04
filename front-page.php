@@ -27,26 +27,46 @@
         <h2>Servicios</h2>
 
         <!-- TODO: Create section or component services grid (¿?) -->
+        <!-- TODO: Add info text -->
         <div class="s-services__grid">
             <figure class="s-services__figure image1">
                 <div class="s-services__overlay"></div>
                 <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-6.jpg" alt="Agenda y mano de mujer">
+                <div class="s-services__info-container">
+                    <h2>Servicios</h2>
+                </div>
             </figure>
             <figure class="s-services__figure image2">
                 <div class="s-services__overlay"></div>
                 <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-7.jpg" alt="Agenda y mano de mujer">
+                <div class="s-services__info-container">
+                    <h3>Actualización de Contenido</h3>
+                    <p>Copywriting creativo</p>
+                </div>
             </figure>
             <figure class="s-services__figure image3">
                 <div class="s-services__overlay"></div>
                 <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-5.jpg" alt="Agenda y mano de mujer">
+                <div class="s-services__info-container">
+                    <h3>Edición de Videos y Podcast</h3>
+                    <p>Destaque visual y auditivo</p>
+                </div>
             </figure>
             <figure class="s-services__figure image4">
                 <div class="s-services__overlay"></div>
-                <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-8.jpg" alt="Agenda y mano de mujer">
+                <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-8.jpg" alt="Imagen de Social Media">
+                <div class="s-services__info-container">
+                    <h3>Gestión de RRSS</h3>
+                    <p>Diseño y contenido estratégico</p>
+                </div>
             </figure>
             <figure class="s-services__figure image5">
                 <div class="s-services__overlay"></div>
                 <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-9.jpg" alt="Agenda y mano de mujer">
+                <div class="s-services__info-container">
+                    <h3>Atención al Cliente</h3>
+                    <p>Soluciones efectivas</p>
+                </div>
             </figure>
         </div>
     </section>

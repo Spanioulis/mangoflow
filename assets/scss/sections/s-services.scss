@@ -34,6 +34,12 @@
     overflow: hidden;
     transition: filter 0.3s ease-in-out;
 
+    // Animation
+    view-timeline-name: --item-timeline;
+    animation: slide-fade-in both;
+    animation-timeline: --item-timeline;
+    animation-range: contain 0% contain 40%;
+
     &:hover {
       filter: none;
     }
@@ -43,14 +49,56 @@
       object-fit: cover;
       height: auto;
     }
+
+    @keyframes slide-fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(5vh);
+      }
+    }
   }
 
   // Overlay
   &__overlay {
-    background-color: rgb(0 0 0 /0.2);
+    background-color: rgb(0 0 0 /0.5);
     height: 100%;
     position: absolute;
     width: 100%;
     z-index: 0;
+  }
+
+  &__info-container {
+    color: $clr-mango;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+
+    > h2 {
+      font-size: $fs-90;
+    }
+
+    > h3 {
+      font-size: $fs-30;
+    }
+  }
+
+  .image1 .s-services__info-container {
+    top: 0;
+    bottom: none;
+  }
+  .image2 .s-services__info-container {
+    color: $clr-blue;
+  }
+  .image3 .s-services__info-container {
+    color: $clr-green;
+  }
+  .image4 .s-services__info-container {
+    color: $clr-red;
+  }
+  .image5 .s-services__info-container {
+    color: $clr-violet;
   }
 }

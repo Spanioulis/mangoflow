@@ -458,6 +458,10 @@ meter {
   filter: grayscale(90%);
   overflow: hidden;
   transition: filter 0.3s ease-in-out;
+  view-timeline-name: --item-timeline;
+  animation: slide-fade-in both;
+  animation-timeline: --item-timeline;
+  animation-range: contain 0% contain 40%;
 }
 .s-services__figure:hover {
   filter: none;
@@ -468,12 +472,49 @@ meter {
      object-fit: cover;
   height: auto;
 }
+@keyframes slide-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(5vh);
+  }
+}
 .s-services__overlay {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   position: absolute;
   width: 100%;
   z-index: 0;
+}
+.s-services__info-container {
+  color: #f4bc43;
+  opacity: 1;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+.s-services__info-container > h2 {
+  font-size: clamp(54px, 9vw, 90px);
+}
+.s-services__info-container > h3 {
+  font-size: clamp(18px, 3vw, 30px);
+}
+.s-services .image1 .s-services__info-container {
+  top: 0;
+  bottom: none;
+}
+.s-services .image2 .s-services__info-container {
+  color: #89b5d4;
+}
+.s-services .image3 .s-services__info-container {
+  color: #a0cf9f;
+}
+.s-services .image4 .s-services__info-container {
+  color: #ea5e79;
+}
+.s-services .image5 .s-services__info-container {
+  color: #7e77af;
 }
 
 .btn, .btn--header {
