@@ -643,7 +643,7 @@ main.template-home .s-text > p {
 }
 main.template-home .swiper {
   max-width: 750px;
-  height: 325px;
+  height: 370px;
   display: grid;
   place-items: center;
 }
@@ -659,14 +659,20 @@ main.template-home .swiper .swiper-slide article {
   flex-direction: column;
   gap: 1em;
   justify-content: center;
-  height: 300px;
+  height: 325px;
   width: 275px;
   padding: 24px;
 }
-main.template-home .swiper .swiper-slide img {
-  height: auto;
+main.template-home .swiper .swiper-slide article > div {
+  overflow: hidden;
+  max-height: 100px;
+}
+main.template-home .swiper .swiper-slide article img {
+  filter: grayscale(1);
+  height: 100%;
   width: 100%;
-  max-width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main.template-home .swiper .swiper-button-prev {
   align-items: center;

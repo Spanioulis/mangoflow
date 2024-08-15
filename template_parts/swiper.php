@@ -2,36 +2,52 @@
 <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-              <!-- Aldi -->
+        <!-- Aldi -->
               <div class="swiper-slide">
                   <article>
-                      <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-aldi.svg" alt="">
-                      <p>Dpto. Compras</p>
-                      <p>Junio 2023 - Act.</p>
+                    <img src="<?= get_template_directory_uri(''); ?>/assets/img/logo-aldi.svg" alt="">
+                    <p>Dpto. Compras</p>
+                    <p>Junio 2023 - Act.</p>
                   </article>
               </div>
               <!-- Lidl -->
               <div class="swiper-slide">
                   <article>
-                      <img src="<?= get_template_directory_uri(  ); ?>/assets/img/.svg" alt="Falta añadir logo Lidl">
-                      <p>Dpto. Compras</p>
-                      <p>Junio 2022 - Mayo 2023</p>
+                    <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-lidl.svg" alt="Falta añadir logo Lidl">
+                    <p>Dpto. Compras</p>
+                    <p>Junio 2022 - Mayo 2023</p>
                   </article>
               </div>
               <!-- Novartis -->
               <div class="swiper-slide">
                   <article>
-                      <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-novartis.svg" alt="Falta añadir logo Lidl">
-                      <p>Dpto. Compras</p>
-                      <p>Enero 2022 - Junio 2022</p>
+                    <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-novartis.svg" alt="Falta añadir logo Lidl">
+                    <p>Dpto. Compras</p>
+                    <p>Enero 2022 - Junio 2022</p>
                   </article>
               </div>
               <!-- Bimbo -->
               <div class="swiper-slide">
                   <article>
-                      <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-bimbo.svg" alt="">
-                      <p>Dpto. Compras</p>
-                      <p>Abril 2018 - Enero 2022</p>
+                    <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-bimbo.svg" alt="">
+                    <p>Dpto. Compras</p>
+                    <p>Abril 2018 - Enero 2022</p>
+                  </article>
+              </div>
+              <!-- Mitsubishi -->
+              <div class="swiper-slide">
+                  <article>
+                    <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-mitsubishi.svg" alt="">
+                    <p>Dpto. Administración</p>
+                    <p>Abril 2018 - Enero 2022</p>
+                  </article>
+              </div>
+              <!-- Unilever -->
+              <div class="swiper-slide">
+                  <article>
+                    <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-unilever.svg" alt="">
+                    <p>Dpto. Compras</p>
+                    <p>Abril 2018 - Enero 2022</p>
                   </article>
               </div>
     </div>
