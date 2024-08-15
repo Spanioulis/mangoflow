@@ -441,7 +441,7 @@ meter {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "image1 image2" "image1 image3" "image4 image5";
+  grid-template-areas: "image1 image3" "image2 image3" "image4 image5";
   gap: 1rem;
   max-height: 1000px;
 }
