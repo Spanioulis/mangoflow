@@ -2,7 +2,7 @@
 
 <main class="template-home">
     <!-- Section #título -->
-    <h1 class="s-main-title js-1cp">Hey!!</h1>
+    <h1 class="s-main-title js-1cp">¡Hola!</h1>
 
     <!-- Section #texto -->
     <section class="s-text js-1cp">
@@ -87,6 +87,7 @@
     <!-- Section #contacto -->
     <section class="s-contact" id="contact">
         <h2>Contacto</h2>
+        <p>Pudes contactar conmigo clicando en el 🥭, o bien  a través de mi <a href="https://www.instagram.com/mangoflow.estudio/" rel="noopener noreferrer">Instagram</a>.</p>
     </section>
 
     <!-- 🥭 Mango Widget -->

@@ -20,6 +20,7 @@ main.template-home {
 		}
 	}
 
+	// TODO: Add swiper style file
 	.swiper {
 		max-width: 750px;
 		height: 370px;
@@ -112,6 +113,23 @@ main.template-home {
 
 			&:after {
 				content: ""; // Remueve el contenido de texto por defecto
+			}
+		}
+	}
+
+	.s-contact {
+		> p {
+			font-size: $fs-24;
+			max-width: 900px;
+			position: relative;
+
+			a {
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: $clr-mango;
+				transition: color 0.3s ease-in-out;
 			}
 		}
 	}

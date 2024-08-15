@@ -712,5 +712,17 @@ main.template-home .swiper .swiper-button-next:hover svg {
 main.template-home .swiper .swiper-button-next:after {
   content: "";
 }
+main.template-home .s-contact > p {
+  font-size: clamp(15px, 2.4vw, 24px);
+  max-width: 900px;
+  position: relative;
+}
+main.template-home .s-contact > p a {
+  text-decoration: none;
+}
+main.template-home .s-contact > p a:hover {
+  color: #f4bc43;
+  transition: color 0.3s ease-in-out;
+}
 
 /*# sourceMappingURL=frontend.min.css.map*/
