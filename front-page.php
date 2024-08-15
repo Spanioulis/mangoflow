@@ -13,7 +13,7 @@
 
     <!-- Section #main-image -->
     <!-- TODO: Add ACF to background-image -->
-    <section class="s-image bg-cover" style="background-image: url('<?php echo get_template_directory_uri(  ); ?>/assets/img/virtual-assistant-1.jpg')">
+    <section class="s-image bg-cover" style="background-image: radial-gradient(transparent, #000), url('<?php echo get_template_directory_uri(  ); ?>/assets/img/virtual-assistant-1.jpg');">
     </section>
 
     <section class="s-text no-padding">
