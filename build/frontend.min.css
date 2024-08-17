@@ -363,6 +363,13 @@ meter {
   justify-content: space-between;
   gap: 1rem;
 }
+.mainmenu ul > li {
+  transition: transform 0.5s;
+}
+.mainmenu ul > li:hover {
+  transition: transform 0.5s;
+  transform: translateY(-0.25rem);
+}
 @media only screen and (max-width: 990px) {
   .mainmenu {
     background-color: white;
