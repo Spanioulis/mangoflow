@@ -1,3 +1,28 @@
 .footer {
-    
+	background: linear-gradient(
+		to right,
+		$clr-blue,
+		$clr-green,
+		$clr-pink,
+		$clr-red,
+		$clr-turquoise,
+		$clr-violet
+	);
+	border-radius: $br-normal $br-normal 0px 0px;
+	display: grid;
+	margin-top: 4rem;
+	padding: clamp(32px, 4.5vw, 100px);
+	place-items: center;
+
+	h2 {
+		font-size: $fs-130;
+		-webkit-text-stroke: 1px white;
+		-webkit-text-fill-color: transparent;
+	}
+
+	h2:hover {
+		transition: all 0.5 ease-in;
+		-webkit-text-stroke: 1px white;
+		-webkit-text-fill-color: white;
+	}
 }

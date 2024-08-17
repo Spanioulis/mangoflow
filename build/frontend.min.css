@@ -407,6 +407,25 @@ meter {
   }
 }
 
+.footer {
+  background: linear-gradient(to right, #89b5d4, #a0cf9f, #d596c0, #ea5e79, #5cbeb8, #7e77af);
+  border-radius: 10px 10px 0px 0px;
+  display: grid;
+  margin-top: 4rem;
+  padding: clamp(32px, 4.5vw, 100px);
+  place-items: center;
+}
+.footer h2 {
+  font-size: clamp(78px, 13vw, 130px);
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+}
+.footer h2:hover {
+  transition: all 0.5 ease-in;
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: white;
+}
+
 .s-about__text {
   display: flex;
   flex-direction: column;
