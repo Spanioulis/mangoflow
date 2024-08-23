@@ -3,6 +3,8 @@ main.template-home {
 	@include section-spacing;
 
 	> section {
+		scroll-margin-top: 3rem;
+
 		> h2 {
 			font-size: $fs-90;
 		}
@@ -10,7 +12,7 @@ main.template-home {
 
 	.s-main-title {
 		font-size: $fs-130;
-		padding: 150px 0px 0px 50px;
+		padding-left: 50px;
 	}
 
 	.s-text {

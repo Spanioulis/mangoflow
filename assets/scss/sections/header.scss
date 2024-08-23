@@ -1,35 +1,36 @@
 .header {
-  // backdrop-filter: blur(5px);
-  background-color: #efefef;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
-  position: fixed;
-  width: 100%;
-  z-index: 100;
+	// backdrop-filter: blur(5px);
+	background-color: #efefef;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 100;
 
-  &__name {
-    display: flex;
-    flex-basis: 0;
-    flex-grow: 1;
-    font-size: $fs-24;
-    font-weight: 500;
-    align-items: center;
-  }
+	&__name {
+		display: flex;
+		flex-basis: 0;
+		flex-grow: 1;
+		font-size: $fs-24;
+		font-weight: 500;
+		align-items: center;
+	}
 
-  &__logo {
-    animation-name: shrink;
-    animation-timeline: scroll();
-    animation-range: 0 350px;
-    animation-fill-mode: both;
+	&__logo {
+		animation-name: shrink;
+		animation-timeline: scroll();
+		animation-range: 0 350px;
+		animation-fill-mode: both;
 
-    @keyframes shrink {
-      from {
-        font-size: $fs-90;
-      }
-      to {
-        font-size: $fs-35;
-      }
-    }
-  }
+		@keyframes shrink {
+			from {
+				font-size: $fs-90;
+			}
+			to {
+				font-size: $fs-35;
+			}
+		}
+	}
 }

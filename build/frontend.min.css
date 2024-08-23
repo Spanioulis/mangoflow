@@ -319,7 +319,8 @@ meter {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 100;
 }
@@ -670,12 +671,15 @@ main.template-home section {
 main.template-home section.no-pad {
   padding: 0;
 }
+main.template-home > section {
+  scroll-margin-top: 3rem;
+}
 main.template-home > section > h2 {
   font-size: clamp(54px, 9vw, 90px);
 }
 main.template-home .s-main-title {
   font-size: clamp(78px, 13vw, 130px);
-  padding: 150px 0px 0px 50px;
+  padding-left: 50px;
 }
 main.template-home .s-text > p {
   font-size: clamp(15px, 2.4vw, 24px);
