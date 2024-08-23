@@ -30,7 +30,13 @@
         <div class="s-services__grid">
             <figure class="s-services__figure image1">
                 <div class="s-services__overlay"></div>
-                <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-9.jpg" alt="Agenda y mano de mujer">
+                <!-- <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-9.jpg" alt="Agenda y mano de mujer"> -->
+                <div class="s-services__video-container">
+                    <video autoplay muted loop playsinline>
+                        <source src="<?= get_template_directory_uri(); ?>/assets/video/virtual-assistant.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
                 <div class="s-services__info-container">
                     <h2>Servicios</h2>
                 </div>
@@ -61,7 +67,7 @@
             </figure>
             <figure class="s-services__figure image5">
                 <div class="s-services__overlay"></div>
-                <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-10.jpg" alt="Agenda y mano de mujer">
+                <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-9.jpg" alt="Agenda y mano de mujer">
                 <div class="s-services__info-container">
                     <h3>Atención al Cliente</h3>
                     <p>Soluciones efectivas</p>
