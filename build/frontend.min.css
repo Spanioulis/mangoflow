@@ -416,7 +416,7 @@ meter {
 }
 
 .footer {
-  background: linear-gradient(to right, #89b5d4, #a0cf9f, #d596c0, #ea5e79, #5cbeb8, #7e77af);
+  background: linear-gradient(to right, hsl(205, 47%, 68%), hsl(119, 33%, 72%), hsl(320, 43%, 71%), hsl(348, 77%, 64%), hsl(176, 43%, 55%), hsl(248, 26%, 58%));
   border-radius: 10px 10px 0px 0px;
   display: grid;
   margin-top: 4rem;
@@ -536,7 +536,7 @@ meter {
      object-fit: cover;
 }
 .s-services__info-container {
-  color: #f4bc43;
+  color: hsl(41, 89%, 61%);
   opacity: 1;
   position: absolute;
   z-index: 2;
@@ -555,16 +555,16 @@ meter {
   bottom: none;
 }
 .s-services .image2 .s-services__info-container {
-  color: #89b5d4;
+  color: hsl(205, 47%, 68%);
 }
 .s-services .image3 .s-services__info-container {
-  color: #a0cf9f;
+  color: hsl(119, 33%, 72%);
 }
 .s-services .image4 .s-services__info-container {
-  color: #ea5e79;
+  color: hsl(348, 77%, 64%);
 }
 .s-services .image5 .s-services__info-container {
-  color: #7e77af;
+  color: hsl(248, 26%, 58%);
 }
 
 .btn, .btn--header {
@@ -732,7 +732,7 @@ main.template-home .swiper .swiper-button-prev svg {
   transition: color 0.3s ease;
 }
 main.template-home .swiper .swiper-button-prev:hover svg {
-  color: #f4bc43;
+  color: hsl(41, 89%, 61%);
 }
 main.template-home .swiper .swiper-button-prev:after {
   content: "";
@@ -751,7 +751,7 @@ main.template-home .swiper .swiper-button-next svg {
   transition: color 0.3s ease;
 }
 main.template-home .swiper .swiper-button-next:hover svg {
-  color: #f4bc43;
+  color: hsl(41, 89%, 61%);
 }
 main.template-home .swiper .swiper-button-next:after {
   content: "";
@@ -765,7 +765,7 @@ main.template-home .s-contact > p a {
   text-decoration: none;
 }
 main.template-home .s-contact > p a:hover {
-  color: #f4bc43;
+  color: hsl(41, 89%, 61%);
   transition: color 0.3s ease-in-out;
 }
 
