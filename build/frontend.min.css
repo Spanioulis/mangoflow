@@ -340,9 +340,11 @@ meter {
 }
 @keyframes shrink {
   from {
+    color: hsl(331, 100%, 90%);
     font-size: clamp(54px, 9vw, 90px);
   }
   to {
+    color: hsl(0, 100%, 67%);
     font-size: clamp(21px, 3.5vw, 35px);
   }
 }
@@ -428,10 +430,10 @@ meter {
   -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: transparent;
 }
-.footer h2:hover {
+.footer:hover h2 {
   transition: all 0.5 ease-in;
   -webkit-text-stroke: 1px white;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: hsla(0, 100%, 100%, 0.5);
 }
 
 .s-about__text {

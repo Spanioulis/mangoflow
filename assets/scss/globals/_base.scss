@@ -3,46 +3,46 @@
 /****************************************************************/
 
 @view-transition {
-  navigation: auto;
+	navigation: auto;
 }
 
 html {
-  // color-scheme: dark light;
-  // font-family: $ff-gotham;
-  background-color: $clr-background;
-  font-family: $ff-agrandir;
-  scroll-behavior: smooth;
+	// color-scheme: dark light;
+	// font-family: $ff-gotham;
+	background-color: $clr-background;
+	font-family: $ff-agrandir;
+	scroll-behavior: smooth;
 }
 
 body {
-  // font rendering an aliasing
-  text-rendering: geometricPrecision;
-  font-smooth: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	// font rendering an aliasing
+	text-rendering: geometricPrecision;
+	font-smooth: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
-  // overscroll
-  overscroll-behavior: none;
+	// overscroll
+	overscroll-behavior: none;
 
-  // smooth scroll (only touch screens)
-  @include m--touchscreen {
-    scroll-behavior: smooth;
-  }
+	// smooth scroll (only touch screens)
+	@include m--touchscreen {
+		scroll-behavior: smooth;
+	}
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
 }
 
 p a {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 p {
-  line-height: 1.5;
-  text-wrap: pretty;
+	line-height: 1.5;
+	text-wrap: pretty;
 }
 
 h1,
@@ -51,6 +51,6 @@ h3,
 h4,
 h5,
 h6 {
-  text-wrap: balance;
-  font-family: $ff-recoleta;
+	text-wrap: balance;
+	font-family: $ff-recoleta;
 }

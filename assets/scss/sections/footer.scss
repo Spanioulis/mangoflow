@@ -8,6 +8,7 @@
 		$clr-turquoise,
 		$clr-violet
 	);
+	// background: linear-gradient(to right, $clr-secondary, $clr-primary);
 	border-radius: $br-normal $br-normal 0px 0px;
 	display: grid;
 	margin-top: 4rem;
@@ -20,9 +21,12 @@
 		-webkit-text-fill-color: transparent;
 	}
 
-	h2:hover {
+	&:hover h2 {
 		transition: all 0.5 ease-in;
 		-webkit-text-stroke: 1px white;
-		-webkit-text-fill-color: white;
+		-webkit-text-fill-color: hsl(0 100% 100% / 50%);
+		// background-image: url("/assets/img/footer-bg.jpg");
+		// background-position: bottom;
+		// background-clip: text;
 	}
 }

@@ -1,5 +1,7 @@
         <footer class="footer">
-            <h2>mangoflow estudio</h2>
+            <a href="<?= get_home_url(); ?>">
+                <h2>mangoflow estudio</h2>
+            </a>
         </footer>
 
         <?php wp_footer(); ?>

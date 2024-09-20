@@ -2,24 +2,20 @@
 
 <main class="template-home">
     <!-- Section #título -->
-    <h1 class="s-main-title js-1cp">¡Hola!</h1>
+    <h1 class="s-main-title js-1cp"><?php the_field('main_title'); ?></h1>
 
     <!-- Section #texto -->
     <section class="s-text js-1cp">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates odit totam libero. Nesciunt rem impedit voluptatem tenetur amet! Animi, minus repellat recusandae aliquid doloremque a dicta quos quasi qui cumque?
-        Voluptatem magnam, minus omnis ea, exercitationem quasi quis commodi illo cumque porro id voluptas expedita distinctio eius corporis odit et illum minima officiis dolore officia a voluptatum ab! Ratione, perferendis.
-        Temporibus quae debitis asperiores ducimus numquam laudantium dicta quos voluptatum tempore, in, itaque harum laboriosam error inventore voluptate accusantium saepe dolorum non necessitatibus nulla? Aliquam officiis officia est possimus quam.</p>
+        <p><?php the_field('main_text'); ?></p>
     </section>
 
     <!-- Section #main-image -->
-    <!-- TODO: Add ACF to background-image -->
-    <section class="s-image bg-cover" style="background-image: radial-gradient(transparent, #000), url('<?php echo get_template_directory_uri(  ); ?>/assets/img/virtual-assistant-1.jpg');">
+    <?php $main_image = get_field('main_image'); ?>
+    <section class="s-image bg-cover" style="background-image: radial-gradient(transparent, #000), url('<?php echo $main_image ?>');">
     </section>
 
     <section class="s-text no-padding">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates odit totam libero. Nesciunt rem impedit voluptatem tenetur amet! Animi, minus repellat recusandae aliquid doloremque a dicta quos quasi qui cumque?
-        Voluptatem magnam, minus omnis ea, exercitationem quasi quis commodi illo cumque porro id voluptas expedita distinctio eius corporis odit et illum minima officiis dolore officia a voluptatum ab! Ratione, perferendis.
-        Temporibus quae debitis asperiores ducimus numquam laudantium dicta quos voluptatum tempore, in, itaque harum laboriosam error inventore voluptate accusantium saepe dolorum non necessitatibus nulla? Aliquam officiis officia est possimus quam.</p>
+        <p><?php the_field('main_text_secondary'); ?></p>
     </section>
 
     <!-- Section #servicios -->
