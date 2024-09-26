@@ -324,6 +324,11 @@ meter {
   width: 100%;
   z-index: 100;
 }
+@media only screen and (max-width: 990px) {
+  .header {
+    padding: 10px 20px;
+  }
+}
 .header__name {
   display: flex;
   flex-basis: 0;
@@ -332,7 +337,14 @@ meter {
   font-weight: 500;
   align-items: center;
 }
+@media only screen and (max-width: 990px) {
+  .header__name {
+    display: none;
+  }
+}
 .header__logo {
+  display: grid;
+  place-content: center;
   animation-name: shrink;
   animation-timeline: scroll();
   animation-range: 0 350px;

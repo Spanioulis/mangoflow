@@ -9,6 +9,10 @@
 	width: 100%;
 	z-index: 100;
 
+	@include m--tablet {
+		padding: 10px 20px;
+	}
+
 	&__name {
 		display: flex;
 		flex-basis: 0;
@@ -16,9 +20,16 @@
 		font-size: $fs-24;
 		font-weight: 500;
 		align-items: center;
+
+		@include m--tablet {
+			display: none;
+		}
 	}
 
 	&__logo {
+		display: grid;
+		place-content: center;
+
 		animation-name: shrink;
 		animation-timeline: scroll();
 		animation-range: 0 350px;
