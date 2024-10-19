@@ -11,7 +11,7 @@
 
     <!-- Section #main-image -->
     <?php $main_image = get_field('main_image'); ?>
-    <section class="s-image bg-cover" style="background-image: radial-gradient(transparent, #000), url('<?php echo $main_image ?>');">
+    <section class="s-image revealing-image bg-cover" style="background-image: radial-gradient(transparent, #000), url('<?php echo $main_image ?>');">
     </section>
 
     <section class="s-text no-padding">

@@ -37,12 +37,11 @@
 
 		@keyframes shrink {
 			from {
-				color: $clr-secondary;
+				// color: $clr-secondary;
 				font-size: $fs-90;
 			}
 			to {
 				color: $clr-primary;
-
 				font-size: $fs-35;
 			}
 		}

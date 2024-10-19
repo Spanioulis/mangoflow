@@ -22,19 +22,15 @@ main.template-home {
 		}
 	}
 
-	// TODO: Add swiper style file
 	.swiper {
-		max-width: 750px;
-		height: 370px;
 		display: grid;
+		height: 370px;
+		max-width: 750px;
 		place-items: center;
-		// background-color: turquoise;
 
 		.swiper-slide {
 			display: grid;
 			place-items: center;
-			// border: 1px solid black;
-			// background-color: azure;
 
 			article {
 				align-items: center;
@@ -64,57 +60,45 @@ main.template-home {
 			}
 		}
 
-		// Button Prev
+		.swiper-button-next,
 		.swiper-button-prev {
 			align-items: center;
 			color: black;
 			display: flex;
 			height: 150px;
 			justify-content: center;
-			width: 150px;
-
 			top: 40%;
-
-			svg {
-				transform: rotate(250deg);
-				transition: color 0.3s ease;
-			}
+			width: 150px;
 
 			&:hover {
 				svg {
-					color: $clr-mango;
+					color: $clr-primary;
 				}
 			}
 
 			&:after {
-				content: ""; // Remueve el contenido de texto por defecto
+				content: "";
+			}
+
+			@include m--tablet {
+				height: 100px;
+				width: 100px;
+			}
+		}
+
+		// Button Prev
+		.swiper-button-prev {
+			svg {
+				transform: rotate(250deg);
+				transition: color 0.3s ease;
 			}
 		}
 
 		// Button Next
 		.swiper-button-next {
-			align-items: center;
-			color: black;
-			display: flex;
-			height: 150px;
-			justify-content: center;
-			width: 150px;
-
-			top: 40%;
-
 			svg {
 				transform: rotate(70deg);
 				transition: color 0.3s ease;
-			}
-
-			&:hover {
-				svg {
-					color: $clr-mango;
-				}
-			}
-
-			&:after {
-				content: ""; // Remueve el contenido de texto por defecto
 			}
 		}
 	}

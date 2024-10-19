@@ -1,22 +1,42 @@
 .s-image {
-  height: 700px;
-  max-height: 900px;
+	height: 700px;
+	max-height: 900px;
 
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-fill-mode: both;
-  animation-range: entry 25% cover 50%;
+	// view-timeline-name: --image;
+	// view-timeline-axis: block;
+	// animation-timeline: --image;
+	// animation-name: show;
+	// animation-fill-mode: both;
+	// animation-range: entry 25% cover 50%;
 
-  @keyframes show {
-    from {
-      opacity: 0.8;
-      scale: 45%;
-    }
-    to {
-      opacity: 1;
-      scale: 100%;
-    }
-  }
+	// @keyframes show {
+	//   from {
+	//     opacity: 0.8;
+	//     scale: 45%;
+	//   }
+	//   to {
+	//     opacity: 1;
+	//     scale: 100%;
+	//   }
+	// }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	@keyframes reveal {
+		0% {
+			opacity: 0;
+			clip-path: inset(45% 20% 45% 20%);
+		}
+		100% {
+			opacity: 1;
+			clip-path: inset(0% 0% 0% 0%);
+		}
+	}
+}
+
+.revealing-image {
+	animation: reveal linear both;
+	animation-timeline: view(10% 10%);
+	animation-range: entry -50% cover 30%;
+	animation-range: entry -100% cover 25%;
 }

@@ -352,7 +352,6 @@ meter {
 }
 @keyframes shrink {
   from {
-    color: hsl(331, 100%, 90%);
     font-size: clamp(54px, 9vw, 90px);
   }
   to {
@@ -363,6 +362,7 @@ meter {
 
 .mainmenu {
   align-items: center;
+  color: hsl(0, 0%, 0%);
   display: flex;
   flex-basis: 0;
   flex-grow: 1;
@@ -404,7 +404,7 @@ meter {
     transition: all 0.1s ease;
   }
   .mainmenu.expanded {
-    background-color: hsl(0, 50%, 50%);
+    background-color: hsl(0, 100%, 67%);
     font-size: clamp(15px, 2.4vw, 24px);
     height: 100vh;
     padding: 5vw;
@@ -460,24 +460,39 @@ meter {
 .s-image {
   height: 700px;
   max-height: 900px;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-fill-mode: both;
-  animation-range: entry 25% cover 50%;
-}
-@keyframes show {
-  from {
-    opacity: 0.8;
-    scale: 45%;
-  }
-  to {
-    opacity: 1;
-    scale: 100%;
-  }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      clip-path: inset(45% 20% 45% 20%);
+    }
+    100% {
+      opacity: 1;
+      clip-path: inset(0% 0% 0% 0%);
+    }
+  }
+}
+.revealing-image {
+  animation: reveal linear both;
+  animation-timeline: view(10% 10%);
+  animation-range: entry -50% cover 30%;
+  animation-range: entry -100% cover 25%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes gridItem {
+    0% {
+      opacity: 0;
+      scale: 0.8;
+    }
+    100% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+}
 .s-services__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -485,6 +500,13 @@ meter {
   grid-template-areas: "image1 image3" "image2 image3" "image4 image5";
   gap: 1rem;
   max-height: 1000px;
+}
+@media only screen and (max-width: 990px) {
+  .s-services__grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "image1" "image2" "image3" "image4" "image5";
+  }
 }
 .s-services__grid .image1 {
   grid-area: image1;
@@ -508,10 +530,10 @@ meter {
   filter: grayscale(90%);
   overflow: hidden;
   transition: filter 0.3s ease-in-out;
-  view-timeline-name: --item-timeline;
-  animation: slide-fade-in both;
-  animation-timeline: --item-timeline;
-  animation-range: contain 0% contain 40%;
+  animation: gridItem linear both;
+  animation-timeline: view(10% 10%);
+  animation-range: entry -50% cover 30%;
+  animation-range: entry -100% cover 25%;
 }
 .s-services__figure:hover {
   filter: none;
@@ -522,18 +544,12 @@ meter {
      object-fit: cover;
   height: auto;
 }
-@keyframes slide-fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(5vh);
-  }
-}
 .s-services__overlay {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   position: absolute;
   width: 100%;
-  z-index: 0;
+  z-index: 1;
 }
 .s-services__video-container {
   position: relative;
@@ -631,7 +647,7 @@ meter {
   width: 22px;
   height: 4px;
   margin: 0 0 5px 0;
-  background: crimson;
+  background: hsl(0, 100%, 67%);
   transition: transform 0.5s ease, opacity 0.2s ease;
 }
 .c-hamburger__line:last-of-type {
@@ -639,7 +655,7 @@ meter {
 }
 .c-hamburger.expanded .c-hamburger__line {
   color: black;
-  background: hsl(90, 90%, 90%);
+  background: hsl(331, 100%, 90%);
   width: 29px;
 }
 .c-hamburger.expanded .c-hamburger__line:nth-child(1) {
@@ -700,9 +716,9 @@ main.template-home .s-text > p {
   max-width: 900px;
 }
 main.template-home .swiper {
-  max-width: 750px;
-  height: 370px;
   display: grid;
+  height: 370px;
+  max-width: 750px;
   place-items: center;
 }
 main.template-home .swiper .swiper-slide {
@@ -732,43 +748,38 @@ main.template-home .swiper .swiper-slide article img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main.template-home .swiper .swiper-button-next,
 main.template-home .swiper .swiper-button-prev {
   align-items: center;
   color: black;
   display: flex;
   height: 150px;
   justify-content: center;
-  width: 150px;
   top: 40%;
+  width: 150px;
+}
+main.template-home .swiper .swiper-button-next:hover svg,
+main.template-home .swiper .swiper-button-prev:hover svg {
+  color: hsl(0, 100%, 67%);
+}
+main.template-home .swiper .swiper-button-next:after,
+main.template-home .swiper .swiper-button-prev:after {
+  content: "";
+}
+@media only screen and (max-width: 990px) {
+  main.template-home .swiper .swiper-button-next,
+  main.template-home .swiper .swiper-button-prev {
+    height: 100px;
+    width: 100px;
+  }
 }
 main.template-home .swiper .swiper-button-prev svg {
   transform: rotate(250deg);
   transition: color 0.3s ease;
 }
-main.template-home .swiper .swiper-button-prev:hover svg {
-  color: hsl(41, 89%, 61%);
-}
-main.template-home .swiper .swiper-button-prev:after {
-  content: "";
-}
-main.template-home .swiper .swiper-button-next {
-  align-items: center;
-  color: black;
-  display: flex;
-  height: 150px;
-  justify-content: center;
-  width: 150px;
-  top: 40%;
-}
 main.template-home .swiper .swiper-button-next svg {
   transform: rotate(70deg);
   transition: color 0.3s ease;
-}
-main.template-home .swiper .swiper-button-next:hover svg {
-  color: hsl(41, 89%, 61%);
-}
-main.template-home .swiper .swiper-button-next:after {
-  content: "";
 }
 main.template-home .s-contact > p {
   font-size: clamp(15px, 2.4vw, 24px);

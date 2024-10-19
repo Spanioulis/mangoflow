@@ -1,5 +1,6 @@
 .mainmenu {
 	align-items: center;
+	color: $clr-black;
 	display: flex;
 	flex-basis: 0;
 	flex-grow: 1;
@@ -42,7 +43,8 @@
 			transition: all 0.1s ease;
 		}
 		&.expanded {
-			background-color: hsl(0deg 50% 50%);
+			// background-color: hsl(0deg 50% 50%);
+			background-color: $clr-primary;
 			font-size: $fs-24;
 			height: 100vh;
 			padding: 5vw;
