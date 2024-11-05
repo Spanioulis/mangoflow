@@ -503,8 +503,8 @@ meter {
 }
 @media only screen and (max-width: 990px) {
   .s-services__grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "image1" "image2" "image3" "image4" "image5";
   }
 }
@@ -524,19 +524,40 @@ meter {
   grid-area: image5;
 }
 .s-services__figure {
-  position: relative;
+  animation-range: entry -100% cover 25%;
+  animation-range: entry -50% cover 30%;
+  animation-timeline: view(10% 10%);
+  animation: gridItem linear both;
   border-radius: 10px;
   cursor: pointer;
   filter: grayscale(90%);
   overflow: hidden;
+  position: relative;
   transition: filter 0.3s ease-in-out;
-  animation: gridItem linear both;
-  animation-timeline: view(10% 10%);
-  animation-range: entry -50% cover 30%;
-  animation-range: entry -100% cover 25%;
+}
+.s-services__figure .s-services__info-container {
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+  background-color: transparent;
+  border-radius: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
 }
 .s-services__figure:hover {
   filter: none;
+  background-color: transparent;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+  transition: all 0.3s ease-in-out;
+  margin: 0;
+}
+.s-services__figure:hover .s-services__info-container:not(:first-of-type) {
+  background-color: hsla(0, 0%, 0%, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  margin: 0.5rem;
 }
 .s-services__figure > img {
   width: 100%;
@@ -552,18 +573,20 @@ meter {
   z-index: 1;
 }
 .s-services__video-container {
-  position: relative;
   aspect-ratio: 16/9;
+  height: 100%;
   overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 .s-services__video-container > video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
+  left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .s-services__info-container {
   color: hsl(41, 89%, 61%);
