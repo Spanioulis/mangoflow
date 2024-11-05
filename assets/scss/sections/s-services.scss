@@ -53,16 +53,16 @@
 
 	// Figure
 	&__figure {
-		animation-range: entry -100% cover 25%;
-		animation-range: entry -50% cover 30%;
-		animation-timeline: view(10% 10%);
-		animation: gridItem linear both;
+		position: relative;
 		border-radius: $br-normal;
 		cursor: pointer;
 		filter: grayscale(90%);
 		overflow: hidden;
-		position: relative;
 		transition: filter 0.3s ease-in-out;
+		animation: gridItem linear both;
+		animation-timeline: view(10% 10%);
+		animation-range: entry -50% cover 30%;
+		animation-range: entry -100% cover 25%;
 
 		// Aseguramos la transición en el estado base
 		.s-services__info-container {

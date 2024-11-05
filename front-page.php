@@ -34,41 +34,29 @@
                     </video>
                 </div>
                 <div class="s-services__info-container">
-                    <h2>Servicios</h2>
+                    <h2><?php the_field('main_title_services'); ?></h2>
                 </div>
             </figure>
-            <figure class="s-services__figure image2">
-                <div class="s-services__overlay"></div>
-                <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-5.jpg" alt="Agenda y mano de mujer">
-                <div class="s-services__info-container">
-                    <h3>Actualización de Contenido</h3>
-                    <p>Copywriting creativo</p>
-                </div>
-            </figure>
-            <figure class="s-services__figure image3">
-                <div class="s-services__overlay"></div>
-                <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-6.jpg" alt="Agenda y mano de mujer">
-                <div class="s-services__info-container">
-                    <h3>Edición de Videos y Podcast</h3>
-                    <p>Destaque visual y auditivo</p>
-                </div>
-            </figure>
-            <figure class="s-services__figure image4">
-                <div class="s-services__overlay"></div>
-                <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-8.jpg" alt="Imagen de Social Media">
-                <div class="s-services__info-container">
-                    <h3>Gestión de RRSS</h3>
-                    <p>Diseño y contenido estratégico</p>
-                </div>
-            </figure>
-            <figure class="s-services__figure image5">
-                <div class="s-services__overlay"></div>
-                <img src="<?= get_template_directory_uri( ); ?>/assets/img/virtual-assistant-9.jpg" alt="Agenda y mano de mujer">
-                <div class="s-services__info-container">
-                    <h3>Atención al Cliente</h3>
-                    <p>Soluciones efectivas</p>
-                </div>
-            </figure>
+
+            <?php if (have_rows('services')): ?>
+                <?php $counter = 2; ?>
+                <?php while (have_rows('services')): the_row(); ?>
+                    <?php 
+                    $image = get_sub_field('image_service');
+                    $title = get_sub_field('title_service');
+                    $text = get_sub_field('text_service');
+                    ?>
+                    <figure class="s-services__figure image<?= $counter; ?>">
+                        <div class="s-services__overlay"></div>
+                        <img src="<?= $image; ?>" alt="Imagen <?= $title; ?>">
+                        <div class="s-services__info-container">
+                            <h3><?= $title; ?></h3>
+                            <p><?= $text; ?></p>
+                        </div>
+                    </figure>
+                    <?php $counter++; ?>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </div>
     </section>
 

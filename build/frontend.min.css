@@ -524,16 +524,16 @@ meter {
   grid-area: image5;
 }
 .s-services__figure {
-  animation-range: entry -100% cover 25%;
-  animation-range: entry -50% cover 30%;
-  animation-timeline: view(10% 10%);
-  animation: gridItem linear both;
+  position: relative;
   border-radius: 10px;
   cursor: pointer;
   filter: grayscale(90%);
   overflow: hidden;
-  position: relative;
   transition: filter 0.3s ease-in-out;
+  animation: gridItem linear both;
+  animation-timeline: view(10% 10%);
+  animation-range: entry -50% cover 30%;
+  animation-range: entry -100% cover 25%;
 }
 .s-services__figure .s-services__info-container {
   -webkit-backdrop-filter: none;
