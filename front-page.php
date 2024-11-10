@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main class="template-home">
-    <h1 class="s-main-title js-1cp"><?php the_field('main_title'); ?></h1>
+    <h1 class="s-main-title js-1cp text-center"><?php the_field('main_title'); ?></h1>
 
     <section class="s-text js-1cp">
         <?php the_field('main_text'); ?>
@@ -12,7 +12,7 @@
     </section>
 
     <section class="s-text no-padding">
-        <p><?php the_field('main_text_secondary'); ?></p>
+        <?php the_field('main_text_secondary'); ?>
     </section>
 
     <section class="s-services" id="services">

@@ -756,12 +756,12 @@ main.template-home .s-text > h1,
 main.template-home .s-text > h2 {
   font-size: clamp(78px, 13vw, 130px);
   line-height: 1;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 main.template-home .s-text > h3 {
   font-size: clamp(40px, 9vw, 90px);
   line-height: 1;
-  margin: 0.5em 0;
+  margin: 0.25em 0;
 }
 main.template-home .s-text > p {
   width: min(750px, 100%);
@@ -862,6 +862,10 @@ main.template-home .s-contact > p a > img {
 main.template-home .s-contact > p a:hover {
   color: hsl(41, 89%, 61%);
   transition: color 0.3s ease-in-out;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /*# sourceMappingURL=frontend.min.css.map*/
