@@ -16,9 +16,10 @@ main.template-home {
 	}
 
 	.s-text {
+		width: min(750px, 100%);
 		> p {
 			font-size: $fs-24;
-			max-width: 900px;
+			margin-bottom: 1em;
 		}
 	}
 

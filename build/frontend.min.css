@@ -734,9 +734,12 @@ main.template-home .s-main-title {
   font-size: clamp(78px, 13vw, 130px);
   padding-left: 50px;
 }
+main.template-home .s-text {
+  width: min(750px, 100%);
+}
 main.template-home .s-text > p {
   font-size: clamp(15px, 2.4vw, 24px);
-  max-width: 900px;
+  margin-bottom: 1em;
 }
 main.template-home .swiper {
   display: grid;

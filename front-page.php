@@ -20,9 +20,6 @@
 
     <!-- Section #servicios -->
     <section class="s-services" id="services">
-        <!-- <h2>Servicios</h2> -->
-
-        <!-- TODO: Create section or component services grid (¿?) -->
         <div class="s-services__grid">
             <figure class="s-services__figure image1">
                 <div class="s-services__overlay"></div>
@@ -62,12 +59,11 @@
 
     <!-- Section #sobre mí -->
     <section class="s-about" id="about-us">
-        <h2>Sobre mí</h2>
+        <h2><?php the_field('about_me_title'); ?></h2>
 
         <!-- Text container -->
         <div class="s-about__text">
-            <p>Soy licenciada en Marketing y llevo más de 15 años trabajando en multinacionales líderes en el mercado. A lo largo de mi carrera, he perfeccionado mis habilidades de organización, creatividad, perseverancia y diligencia.</p>
-            <p>Decidí convertirme en asistente virtual para encontrar una profesión que realmente se alineara con mis valores y habilidades. Ahora, estoy aquí para ayudarte a optimizar tu tiempo y recursos, aportando mi experiencia y dedicación a tus proyectos.</p>
+            <p><?php the_field('about_me_text'); ?></p>
         </div>
 
         <!-- Swiper -->
