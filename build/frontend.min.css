@@ -315,6 +315,8 @@ meter {
 }
 
 .header {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   background-color: #efefef;
   display: flex;
   justify-content: space-between;
@@ -352,7 +354,7 @@ meter {
 }
 @keyframes shrink {
   from {
-    font-size: clamp(54px, 9vw, 90px);
+    font-size: clamp(40px, 9vw, 90px);
   }
   to {
     color: hsl(0, 100%, 67%);
@@ -598,7 +600,7 @@ meter {
   padding: 1rem;
 }
 .s-services__info-container > h2 {
-  font-size: clamp(54px, 9vw, 90px);
+  font-size: clamp(40px, 9vw, 90px);
 }
 .s-services__info-container > h3 {
   font-size: clamp(18px, 3vw, 30px);
@@ -728,7 +730,7 @@ main.template-home > section {
   scroll-margin-top: 3rem;
 }
 main.template-home > section > h2 {
-  font-size: clamp(54px, 9vw, 90px);
+  font-size: clamp(40px, 9vw, 90px);
 }
 main.template-home .s-main-title {
   font-size: clamp(78px, 13vw, 130px);

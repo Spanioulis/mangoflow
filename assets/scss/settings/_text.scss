@@ -10,7 +10,7 @@ $fs-45: clamp(27px, 4.5vw, 45px); // 45px
 $fs-60: clamp(36px, 6vw, 60px); // 60px
 $fs-64: clamp(40px, 6.4vw, 64px); // 64px
 $fs-70: clamp(42px, 7vw, 70px); // 70px
-$fs-90: clamp(54px, 9vw, 90px); // 90px
+$fs-90: clamp(40px, 9vw, 90px); // 90px
 $fs-120: clamp(72px, 12vw, 120px); // 120px
 $fs-130: clamp(78px, 13vw, 130px); // 130px
 $fs-240: clamp(120px, 24vw, 240px); // 240px
@@ -34,19 +34,19 @@ $lh-285: clamp(260px, 20.357vw, 285px); // 285px
 $lh-300: clamp(280px, 21.428vw, 300px); // 300px
 
 @mixin placeholder {
-  &::placeholder {
-    @content;
-  }
-  ::-webkit-input-placeholder {
-    @content;
-  }
-  :-moz-placeholder {
-    @content;
-  }
-  ::-moz-placeholder {
-    @content;
-  }
-  :-ms-input-placeholder {
-    @content;
-  }
+	&::placeholder {
+		@content;
+	}
+	::-webkit-input-placeholder {
+		@content;
+	}
+	:-moz-placeholder {
+		@content;
+	}
+	::-moz-placeholder {
+		@content;
+	}
+	:-ms-input-placeholder {
+		@content;
+	}
 }

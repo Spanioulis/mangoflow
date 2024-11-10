@@ -1,5 +1,5 @@
 .header {
-	// backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
 	background-color: #efefef;
 	display: flex;
 	justify-content: space-between;
@@ -40,6 +40,7 @@
 				// color: $clr-secondary;
 				font-size: $fs-90;
 			}
+
 			to {
 				color: $clr-primary;
 				font-size: $fs-35;
