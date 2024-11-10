@@ -4,7 +4,7 @@
     <h1 class="s-main-title js-1cp"><?php the_field('main_title'); ?></h1>
 
     <section class="s-text js-1cp">
-        <p><?php the_field('main_text'); ?></p>
+        <?php the_field('main_text'); ?>
     </section>
 
     <?php $main_image = get_field('main_image'); ?>

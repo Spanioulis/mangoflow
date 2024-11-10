@@ -747,10 +747,24 @@ main.template-home .s-main-title {
   font-size: clamp(78px, 13vw, 130px);
   padding-left: 50px;
 }
-main.template-home .s-text {
-  width: min(750px, 100%);
+@media only screen and (max-width: 767px) {
+  main.template-home .s-main-title {
+    padding-left: 1.25rem;
+  }
+}
+main.template-home .s-text > h1,
+main.template-home .s-text > h2 {
+  font-size: clamp(78px, 13vw, 130px);
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+main.template-home .s-text > h3 {
+  font-size: clamp(40px, 9vw, 90px);
+  line-height: 1;
+  margin: 0.5em 0;
 }
 main.template-home .s-text > p {
+  width: min(750px, 100%);
   font-size: clamp(15px, 2.4vw, 24px);
   margin-bottom: 1em;
 }
@@ -841,6 +855,9 @@ main.template-home .s-contact > p {
 }
 main.template-home .s-contact > p a {
   text-decoration: none;
+}
+main.template-home .s-contact > p a > img {
+  display: inline;
 }
 main.template-home .s-contact > p a:hover {
   color: hsl(41, 89%, 61%);

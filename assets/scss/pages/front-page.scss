@@ -13,13 +13,31 @@ main.template-home {
 	.s-main-title {
 		font-size: $fs-130;
 		padding-left: 50px;
+
+		@include m--mobile {
+			padding-left: 1.25rem;
+		}
 	}
 
 	.s-text {
-		width: min(750px, 100%);
+		> h1,
+		> h2 {
+			font-size: $fs-130;
+			line-height: 1;
+			margin-bottom: 0.5em;
+		}
+
+		> h3 {
+			font-size: $fs-90;
+			line-height: 1;
+			margin: 0.5em 0;
+		}
+
 		> p {
+			width: min(750px, 100%);
 			font-size: $fs-24;
 			margin-bottom: 1em;
+			// padding-left: 2em;
 		}
 	}
 
@@ -125,6 +143,10 @@ main.template-home {
 
 			a {
 				text-decoration: none;
+
+				> img {
+					display: inline;
+				}
 			}
 
 			a:hover {
