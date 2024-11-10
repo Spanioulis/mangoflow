@@ -1,15 +1,12 @@
 <?php get_header(); ?>
 
 <main class="template-home">
-    <!-- Section #título -->
     <h1 class="s-main-title js-1cp"><?php the_field('main_title'); ?></h1>
 
-    <!-- Section #texto -->
     <section class="s-text js-1cp">
         <p><?php the_field('main_text'); ?></p>
     </section>
 
-    <!-- Section #main-image -->
     <?php $main_image = get_field('main_image'); ?>
     <section class="s-image revealing-image bg-cover" style="background-image: radial-gradient(transparent, #000), url('<?php echo $main_image ?>');">
     </section>
@@ -18,7 +15,6 @@
         <p><?php the_field('main_text_secondary'); ?></p>
     </section>
 
-    <!-- Section #servicios -->
     <section class="s-services" id="services">
         <div class="s-services__grid">
             <figure class="s-services__figure image1">
@@ -57,7 +53,6 @@
         </div>
     </section>
 
-    <!-- Section #sobre mí -->
     <section class="s-about" id="about-us">
         <h2><?php the_field('about_me_title'); ?></h2>
 
@@ -70,13 +65,11 @@
         <?php echo get_template_part('template_parts/swiper' ); ?>
     </section>
 
-    <!-- Section #contacto -->
     <section class="s-contact" id="contact">
-        <h2>Contacto</h2>
-        <p>Pudes contactar conmigo clicando en el 🥭, o bien  a través de mi <a href="https://www.instagram.com/mangoflow.estudio/" rel="noopener noreferrer">Instagram</a>.</p>
+        <h2><?php the_field('contact_title'); ?></h2>
+        <p><?php the_field('contact_text'); ?></p>
     </section>
 
-    <!-- 🥭 Mango Widget -->
     <?php echo get_template_part('template_parts/mango-widget'); ?>
 </main>
 
