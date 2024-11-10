@@ -757,22 +757,25 @@ main.template-home .swiper .swiper-slide article {
   box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px hsl(0, 12%, 97%);
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  justify-content: center;
+  gap: 0.8125em;
   height: 325px;
-  width: 275px;
+  justify-content: center;
   padding: 24px;
+  width: 285px;
 }
 main.template-home .swiper .swiper-slide article > div {
   overflow: hidden;
   max-height: 100px;
 }
-main.template-home .swiper .swiper-slide article img {
+main.template-home .swiper .swiper-slide article > img {
   filter: grayscale(1);
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+main.template-home .swiper .swiper-slide article > p {
+  font-size: clamp(12px, 2vw, 20px);
 }
 main.template-home .swiper .swiper-button-next,
 main.template-home .swiper .swiper-button-prev {

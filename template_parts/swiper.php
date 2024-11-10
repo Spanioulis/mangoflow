@@ -2,54 +2,18 @@
 <div class="swiper">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-        <!-- Aldi -->
-              <div class="swiper-slide">
-                  <article>
-                    <img src="<?= get_template_directory_uri(''); ?>/assets/img/logo-aldi.svg" alt="">
-                    <p>Dpto. Compras</p>
-                    <p>Junio 2023 - Act.</p>
-                  </article>
-              </div>
-              <!-- Lidl -->
-              <div class="swiper-slide">
-                  <article>
-                    <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-lidl.svg" alt="Falta añadir logo Lidl">
-                    <p>Dpto. Compras</p>
-                    <p>Junio 2022 - Mayo 2023</p>
-                  </article>
-              </div>
-              <!-- Novartis -->
-              <div class="swiper-slide">
-                  <article>
-                    <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-novartis.svg" alt="Falta añadir logo Lidl">
-                    <p>Dpto. Compras</p>
-                    <p>Enero 2022 - Junio 2022</p>
-                  </article>
-              </div>
-              <!-- Bimbo -->
-              <div class="swiper-slide">
-                  <article>
-                    <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-bimbo.svg" alt="">
-                    <p>Dpto. Compras</p>
-                    <p>Abril 2018 - Enero 2022</p>
-                  </article>
-              </div>
-              <!-- Mitsubishi -->
-              <div class="swiper-slide">
-                  <article>
-                    <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-mitsubishi.svg" alt="">
-                    <p>Dpto. Administración</p>
-                    <p>Abril 2018 - Enero 2022</p>
-                  </article>
-              </div>
-              <!-- Unilever -->
-              <div class="swiper-slide">
-                  <article>
-                    <img src="<?= get_template_directory_uri(  ); ?>/assets/img/logo-unilever.svg" alt="">
-                    <p>Dpto. Compras</p>
-                    <p>Abril 2018 - Enero 2022</p>
-                  </article>
-              </div>
+      <?php if(have_rows('work_experience')): while(have_rows('work_experience')): the_row(); ?>
+        <div class="swiper-slide">
+          <?php $image = get_sub_field('image'); ?>
+          <?php if($image): ?>
+            <article>
+            <img src="<?= $image['url']; ?>" alt="<?= $image['alt']; ?>">
+            <!-- <p><?= get_sub_field('company'); ?></p> -->
+            <p><?= get_sub_field('dates'); ?></p>
+          </article>
+          <?php endif; ?>
+        </div>
+      <?php endwhile; endif; ?>
     </div>
 
     <!-- If we need pagination -->
