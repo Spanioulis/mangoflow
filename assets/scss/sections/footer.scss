@@ -11,9 +11,14 @@
 	// background: linear-gradient(to right, $clr-secondary, $clr-primary);
 	border-radius: $br-normal $br-normal 0px 0px;
 	display: grid;
-	margin-top: 4rem;
+	margin-top: 4em;
 	padding: clamp(32px, 4.5vw, 100px);
 	place-items: center;
+
+	@include m--mobile {
+		margin-top: 2em;
+		text-align: center;
+	}
 
 	h2 {
 		font-size: $fs-130;

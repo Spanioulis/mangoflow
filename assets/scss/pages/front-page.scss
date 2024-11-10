@@ -29,6 +29,10 @@ main.template-home {
 		max-width: 750px;
 		place-items: center;
 
+		@include m--mobile {
+			height: 250px;
+		}
+
 		.swiper-slide {
 			display: grid;
 			place-items: center;
@@ -46,6 +50,11 @@ main.template-home {
 				justify-content: center;
 				padding: 24px;
 				width: 285px;
+
+				@include m--mobile {
+					height: 200px;
+					width: 200px;
+				}
 
 				> div {
 					overflow: hidden;
