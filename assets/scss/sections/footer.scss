@@ -1,13 +1,14 @@
 .footer {
-	background: linear-gradient(
-		to right,
-		$clr-blue,
-		$clr-green,
-		$clr-pink,
-		$clr-red,
-		$clr-turquoise,
-		$clr-violet
-	);
+	// background: linear-gradient(
+	// 	to right,
+	// 	$clr-blue,
+	// 	$clr-green,
+	// 	$clr-pink,
+	// 	$clr-red,
+	// 	$clr-turquoise,
+	// 	$clr-violet
+	// );
+	background: linear-gradient(to right, $clr-primary, $clr-secondary);
 	// background: linear-gradient(to right, $clr-secondary, $clr-primary);
 	border-radius: $br-normal $br-normal 0px 0px;
 	display: grid;
@@ -28,10 +29,28 @@
 
 	&:hover h2 {
 		transition: all 0.5 ease-in;
-		-webkit-text-stroke: 1px white;
-		-webkit-text-fill-color: hsl(0 100% 100% / 50%);
+		// -webkit-text-stroke: 1px white;
+		// -webkit-text-fill-color: hsl(0 100% 100% / 50%);
+
 		// background-image: url("/assets/img/footer-bg.jpg");
 		// background-position: bottom;
 		// background-clip: text;
+	}
+
+	> ul {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+
+		svg {
+			color: $clr-background;
+			height: 2rem;
+			width: 2rem;
+			transition: all 0.5s ease-in-out;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
 	}
 }
