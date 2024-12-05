@@ -912,6 +912,9 @@ main.template-home .swiper .swiper-button-next svg {
   transform: rotate(70deg);
   transition: color 0.3s ease;
 }
+main.template-home .s-contact > h2 {
+  padding-bottom: 1rem;
+}
 main.template-home .s-contact > p {
   font-size: clamp(18px, 2.4vw, 24px);
   max-width: 900px;

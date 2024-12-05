@@ -150,6 +150,10 @@ main.template-home {
 	}
 
 	.s-contact {
+		> h2 {
+			padding-bottom: 1rem;
+		}
+
 		> p {
 			font-size: $fs-24;
 			max-width: 900px;
