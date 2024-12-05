@@ -335,7 +335,7 @@ meter {
   display: flex;
   flex-basis: 0;
   flex-grow: 1;
-  font-size: clamp(15px, 2.4vw, 24px);
+  font-size: clamp(18px, 2.4vw, 24px);
   font-weight: 500;
   align-items: center;
 }
@@ -354,7 +354,7 @@ meter {
 }
 @keyframes shrink {
   from {
-    font-size: clamp(40px, 9vw, 90px);
+    font-size: clamp(50px, 9vw, 90px);
   }
   to {
     color: hsl(0, 100%, 67%);
@@ -368,7 +368,7 @@ meter {
   display: flex;
   flex-basis: 0;
   flex-grow: 1;
-  font-size: clamp(10px, 1.6vw, 16px);
+  font-size: clamp(14px, 1.6vw, 16px);
   font-weight: 300;
   gap: 2rem;
   justify-content: flex-end;
@@ -407,7 +407,7 @@ meter {
   }
   .mainmenu.expanded {
     background-color: hsl(0, 100%, 67%);
-    font-size: clamp(15px, 2.4vw, 24px);
+    font-size: clamp(18px, 2.4vw, 24px);
     height: 100vh;
     padding: 5vw;
     pointer-events: all;
@@ -435,12 +435,14 @@ meter {
   background-color: hsl(331, 100%, 90%);
   border-radius: 10px 10px 0px 0px;
   display: grid;
+  gap: 2rem;
   margin-top: 4em;
   padding: clamp(32px, 4.5vw, 100px);
   place-items: center;
 }
 @media only screen and (max-width: 767px) {
   .footer {
+    gap: 1rem;
     margin-top: 2em;
     text-align: center;
   }
@@ -448,6 +450,12 @@ meter {
 .footer h2 {
   font-size: clamp(78px, 13vw, 130px);
   color: hsl(0, 100%, 67%);
+  line-height: 1;
+}
+@media only screen and (max-width: 767px) {
+  .footer h2 {
+    font-size: clamp(50px, 9vw, 90px);
+  }
 }
 .footer:hover h2 {
   transition: all 0.5 ease-in;
@@ -470,7 +478,7 @@ meter {
 .s-about__text {
   display: flex;
   flex-direction: column;
-  font-size: clamp(12px, 2vw, 20px);
+  font-size: clamp(16px, 2vw, 20px);
   gap: 1rem;
   max-width: 650px;
 }
@@ -616,10 +624,10 @@ meter {
   padding: 1rem;
 }
 .s-services__info-container > h2 {
-  font-size: clamp(40px, 9vw, 90px);
+  font-size: clamp(50px, 9vw, 90px);
 }
 .s-services__info-container > h3 {
-  font-size: clamp(18px, 3vw, 30px);
+  font-size: clamp(22px, 3vw, 30px);
 }
 .s-services .image1 .s-services__info-container {
   top: 0;
@@ -758,7 +766,7 @@ meter {
   animation: scrollLeft 30s linear infinite;
   flex-shrink: 0;
   font-family: "Recoleta";
-  font-size: clamp(40px, 9vw, 90px);
+  font-size: clamp(50px, 9vw, 90px);
   line-height: 1.5;
   padding-inline: 1rem;
   white-space: nowrap;
@@ -786,15 +794,15 @@ main.template-home > section {
   scroll-margin-top: 3rem;
 }
 main.template-home > section > h2 {
-  font-size: clamp(40px, 9vw, 90px);
+  font-size: clamp(50px, 9vw, 90px);
 }
 main.template-home .s-main-title {
-  font-size: clamp(40px, 9vw, 90px);
+  font-size: clamp(50px, 9vw, 90px);
   padding-top: 3rem;
 }
 @media only screen and (max-width: 767px) {
   main.template-home .s-main-title {
-    padding-left: 1.25rem;
+    padding-top: 2rem;
   }
 }
 main.template-home .s-text {
@@ -803,13 +811,13 @@ main.template-home .s-text {
 }
 main.template-home .s-text > h1,
 main.template-home .s-text > h2 {
-  font-size: clamp(40px, 9vw, 90px);
+  font-size: clamp(50px, 9vw, 90px);
   line-height: 1;
   margin-block: 0.5em 0.25em;
 }
 main.template-home .s-text > div > p {
   font-family: "Recoleta";
-  font-size: clamp(40px, 9vw, 90px);
+  font-size: clamp(50px, 9vw, 90px);
   line-height: 1;
   margin-block: 0.5em 0.25em;
 }
@@ -819,7 +827,7 @@ main.template-home .s-text > h3 {
   margin-block: 0.5em 0.25em;
 }
 main.template-home .s-text > p {
-  font-size: clamp(15px, 2.4vw, 24px);
+  font-size: clamp(18px, 2.4vw, 24px);
   margin-bottom: 1em;
   margin-inline: auto;
   width: min(750px, 100%);
@@ -869,7 +877,7 @@ main.template-home .swiper .swiper-slide article > img {
      object-fit: cover;
 }
 main.template-home .swiper .swiper-slide article > p {
-  font-size: clamp(12px, 2vw, 20px);
+  font-size: clamp(16px, 2vw, 20px);
 }
 main.template-home .swiper .swiper-button-next,
 main.template-home .swiper .swiper-button-prev {
@@ -905,7 +913,7 @@ main.template-home .swiper .swiper-button-next svg {
   transition: color 0.3s ease;
 }
 main.template-home .s-contact > p {
-  font-size: clamp(15px, 2.4vw, 24px);
+  font-size: clamp(18px, 2.4vw, 24px);
   max-width: 900px;
   position: relative;
 }

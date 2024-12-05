@@ -9,15 +9,17 @@
 	// 	$clr-violet
 	// );
 	// background: linear-gradient(to right, $clr-primary, $clr-secondary);
-	background-color: $clr-secondary;
 	// background: linear-gradient(to right, $clr-secondary, $clr-primary);
+	background-color: $clr-secondary;
 	border-radius: $br-normal $br-normal 0px 0px;
 	display: grid;
+	gap: 2rem;
 	margin-top: 4em;
 	padding: clamp(32px, 4.5vw, 100px);
 	place-items: center;
 
 	@include m--mobile {
+		gap: 1rem;
 		margin-top: 2em;
 		text-align: center;
 	}
@@ -25,8 +27,13 @@
 	h2 {
 		font-size: $fs-130;
 		color: $clr-primary;
+		line-height: 1;
 		// -webkit-text-stroke: 1px $clr-primary;
 		// -webkit-text-fill-color: transparent;
+
+		@include m--mobile {
+			font-size: $fs-90;
+		}
 	}
 
 	&:hover h2 {
