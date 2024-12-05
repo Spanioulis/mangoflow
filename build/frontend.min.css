@@ -432,7 +432,7 @@ meter {
 }
 
 .footer {
-  background: linear-gradient(to right, hsl(205, 47%, 68%), hsl(119, 33%, 72%), hsl(320, 43%, 71%), hsl(348, 77%, 64%), hsl(176, 43%, 55%), hsl(248, 26%, 58%));
+  background-color: hsl(331, 100%, 90%);
   border-radius: 10px 10px 0px 0px;
   display: grid;
   margin-top: 4em;
@@ -447,13 +447,24 @@ meter {
 }
 .footer h2 {
   font-size: clamp(78px, 13vw, 130px);
-  -webkit-text-stroke: 1px white;
-  -webkit-text-fill-color: transparent;
+  color: hsl(0, 100%, 67%);
 }
 .footer:hover h2 {
   transition: all 0.5 ease-in;
-  -webkit-text-stroke: 1px white;
-  -webkit-text-fill-color: hsla(0, 100%, 100%, 0.5);
+}
+.footer > ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.footer > ul svg {
+  color: hsl(0, 100%, 67%);
+  height: 2rem;
+  width: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.footer > ul svg:hover {
+  transform: scale(1.1);
 }
 
 .s-about__text {
@@ -535,7 +546,7 @@ meter {
   position: relative;
   border-radius: 10px;
   cursor: pointer;
-  filter: grayscale(90%);
+  filter: grayscale(100%);
   overflow: hidden;
   transition: filter 0.3s ease-in-out;
   animation: gridItem linear both;
@@ -622,7 +633,7 @@ meter {
   color: hsl(119, 33%, 72%);
 }
 .s-services .image4 .s-services__info-container {
-  color: hsl(348, 77%, 64%);
+  color: hsl(320, 43%, 71%);
 }
 .s-services .image5 .s-services__info-container {
   color: hsl(248, 26%, 58%);
@@ -728,6 +739,37 @@ meter {
   }
 }
 
+.wrapper {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+  display: flex; /* Para alinear los items en línea */
+  align-items: center; /* Centrar verticalmente el texto */
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
+          mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
+}
+.wrapper .item {
+  white-space: nowrap; /* Evitar saltos de línea */
+  font-size: 1.2rem;
+  font-size: clamp(40px, 9vw, 90px);
+  line-height: 1.5;
+  font-family: "Recoleta";
+  flex-shrink: 0; /* Asegura que el ancho no se reduzca */
+  padding-inline: 1rem; /* Espaciado entre los mensajes */
+  animation: scrollLeft 30s linear infinite;
+}
+
+/* Animación de desplazamiento continuo */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 main.template-home {
   min-height: 100dvh;
 }
@@ -744,29 +786,40 @@ main.template-home > section > h2 {
   font-size: clamp(40px, 9vw, 90px);
 }
 main.template-home .s-main-title {
-  font-size: clamp(78px, 13vw, 130px);
-  padding-left: 50px;
+  font-size: clamp(40px, 9vw, 90px);
+  padding-top: 3rem;
 }
 @media only screen and (max-width: 767px) {
   main.template-home .s-main-title {
     padding-left: 1.25rem;
   }
 }
+main.template-home .s-text {
+  text-align: center;
+  padding-inline: clamp(16px, 4.5vw, 50px);
+}
 main.template-home .s-text > h1,
 main.template-home .s-text > h2 {
-  font-size: clamp(78px, 13vw, 130px);
-  line-height: 1;
-  margin-bottom: 0.25em;
-}
-main.template-home .s-text > h3 {
   font-size: clamp(40px, 9vw, 90px);
   line-height: 1;
-  margin: 0.25em 0;
+  margin-block: 0.5em 0.25em;
+}
+main.template-home .s-text > div > p {
+  font-family: "Recoleta";
+  font-size: clamp(40px, 9vw, 90px);
+  line-height: 1;
+  margin-block: 0.5em 0.25em;
+}
+main.template-home .s-text > h3 {
+  font-size: clamp(42px, 7vw, 70px);
+  line-height: 1;
+  margin-block: 0.5em 0.25em;
 }
 main.template-home .s-text > p {
-  width: min(750px, 100%);
   font-size: clamp(15px, 2.4vw, 24px);
   margin-bottom: 1em;
+  margin-inline: auto;
+  width: min(750px, 100%);
 }
 main.template-home .swiper {
   display: grid;

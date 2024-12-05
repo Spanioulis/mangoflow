@@ -11,8 +11,8 @@ main.template-home {
 	}
 
 	.s-main-title {
-		font-size: $fs-130;
-		padding-left: 50px;
+		font-size: $fs-90;
+		padding-top: 3rem;
 
 		@include m--mobile {
 			padding-left: 1.25rem;
@@ -20,24 +20,38 @@ main.template-home {
 	}
 
 	.s-text {
+		text-align: center;
+
+		// TODO: Mirar si esto es correcto o no
+		padding-inline: clamp(16px, 4.5vw, 50px);
+
 		> h1,
 		> h2 {
-			font-size: $fs-130;
+			font-size: $fs-90;
 			line-height: 1;
-			margin-bottom: 0.25em;
+			margin-block: 0.5em 0.25em;
+		}
+
+		> div {
+			> p {
+				font-family: $ff-recoleta;
+				font-size: $fs-90;
+				line-height: 1;
+				margin-block: 0.5em 0.25em;
+			}
 		}
 
 		> h3 {
-			font-size: $fs-90;
+			font-size: $fs-70;
 			line-height: 1;
-			margin: 0.25em 0;
+			margin-block: 0.5em 0.25em;
 		}
 
 		> p {
-			width: min(750px, 100%);
 			font-size: $fs-24;
 			margin-bottom: 1em;
-			// padding-left: 2em;
+			margin-inline: auto;
+			width: min(750px, 100%);
 		}
 	}
 

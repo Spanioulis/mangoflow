@@ -3,15 +3,37 @@
 <main class="template-home">
     <h1 class="s-main-title js-1cp text-center"><?php the_field('main_title'); ?></h1>
 
-    <section class="s-text js-1cp">
-        <?php the_field('main_text'); ?>
+    <section class="s-text no-pad js-1cp">
+        <h2><?php the_field('main_subtitle'); ?></h2>
+        <div>
+            <p>Me gusta:</p>
+
+            
+
+            <?php if (have_rows('main_text_primary')): ?>
+                <?php while (have_rows('main_text_primary')): the_row(); ?>
+                    <p><?php the_sub_field('text_primary'); ?></p>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
+
+        <!-- <div class="item"> El yoga, los perros, el crecimiento personal, organizar, planificar, las novelas y ahora último los bebés 🙂</div> -->
+
+        <div class="wrapper">
+            <div class="item">
+                El yoga, los perros, el crecimiento personal, organizar, planificar, las novelas y ahora último los bebés 🙂
+            </div>
+            <div class="item">
+                El yoga, los perros, el crecimiento personal, organizar, planificar, las novelas y ahora último los bebés 🙂
+            </div>
+        </div>
     </section>
 
     <?php $main_image = get_field('main_image'); ?>
     <section class="s-image revealing-image bg-cover" style="background-image: radial-gradient(transparent, #000), url('<?php echo $main_image ?>');">
     </section>
 
-    <section class="s-text no-padding">
+    <section class="s-text">
         <?php the_field('main_text_secondary'); ?>
     </section>
 
@@ -60,6 +82,12 @@
         <div class="s-about__text">
             <p><?php the_field('about_me_text'); ?></p>
         </div>
+
+
+    </section>
+
+    <section class="s-experience" id="experience">
+        <h2>Mi experiencia</h2>
 
         <!-- Swiper -->
         <?php echo get_template_part('template_parts/swiper' ); ?>

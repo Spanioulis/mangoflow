@@ -1,0 +1,39 @@
+.wrapper {
+	width: min(90%, 1200px);
+	margin-inline: auto;
+	position: relative;
+	height: 150px;
+	overflow: hidden;
+	display: flex; /* Para alinear los items en línea */
+	align-items: center; /* Centrar verticalmente el texto */
+
+	mask-image: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 1) 20%,
+		rgba(0, 0, 0, 1) 80%,
+		rgba(0, 0, 0, 0)
+	);
+
+	.item {
+		white-space: nowrap; /* Evitar saltos de línea */
+		font-size: 1.2rem;
+		font-size: $fs-90;
+		line-height: 1.5;
+		font-family: $ff-recoleta;
+		flex-shrink: 0; /* Asegura que el ancho no se reduzca */
+		padding-inline: 1rem; /* Espaciado entre los mensajes */
+		animation: scrollLeft 30s linear infinite;
+		// animation-delay: -3s;
+	}
+}
+
+/* Animación de desplazamiento continuo */
+@keyframes scrollLeft {
+	0% {
+		transform: translateX(20%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}

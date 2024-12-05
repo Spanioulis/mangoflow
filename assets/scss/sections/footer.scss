@@ -8,7 +8,8 @@
 	// 	$clr-turquoise,
 	// 	$clr-violet
 	// );
-	background: linear-gradient(to right, $clr-primary, $clr-secondary);
+	// background: linear-gradient(to right, $clr-primary, $clr-secondary);
+	background-color: $clr-secondary;
 	// background: linear-gradient(to right, $clr-secondary, $clr-primary);
 	border-radius: $br-normal $br-normal 0px 0px;
 	display: grid;
@@ -23,8 +24,9 @@
 
 	h2 {
 		font-size: $fs-130;
-		-webkit-text-stroke: 1px white;
-		-webkit-text-fill-color: transparent;
+		color: $clr-primary;
+		// -webkit-text-stroke: 1px $clr-primary;
+		// -webkit-text-fill-color: transparent;
 	}
 
 	&:hover h2 {
@@ -43,7 +45,7 @@
 		justify-content: center;
 
 		svg {
-			color: $clr-background;
+			color: $clr-primary;
 			height: 2rem;
 			width: 2rem;
 			transition: all 0.5s ease-in-out;
