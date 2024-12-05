@@ -740,25 +740,29 @@ meter {
 }
 
 .wrapper {
-  width: min(90%, 1200px);
-  margin-inline: auto;
-  position: relative;
+  align-items: center;
+  display: flex;
   height: 150px;
+  margin-inline: auto;
   overflow: hidden;
-  display: flex; /* Para alinear los items en línea */
-  align-items: center; /* Centrar verticalmente el texto */
+  position: relative;
+  width: min(90%, 1200px);
   -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
           mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
 }
+@media only screen and (max-width: 990px) {
+  .wrapper {
+    width: 100%;
+  }
+}
 .wrapper .item {
-  white-space: nowrap; /* Evitar saltos de línea */
-  font-size: 1.2rem;
+  animation: scrollLeft 30s linear infinite;
+  flex-shrink: 0;
+  font-family: "Recoleta";
   font-size: clamp(40px, 9vw, 90px);
   line-height: 1.5;
-  font-family: "Recoleta";
-  flex-shrink: 0; /* Asegura que el ancho no se reduzca */
-  padding-inline: 1rem; /* Espaciado entre los mensajes */
-  animation: scrollLeft 30s linear infinite;
+  padding-inline: 1rem;
+  white-space: nowrap;
 }
 
 /* Animación de desplazamiento continuo */

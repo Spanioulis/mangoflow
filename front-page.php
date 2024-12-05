@@ -8,24 +8,13 @@
         <div>
             <p>Me gusta:</p>
 
-            
-
-            <?php if (have_rows('main_text_primary')): ?>
-                <?php while (have_rows('main_text_primary')): the_row(); ?>
-                    <p><?php the_sub_field('text_primary'); ?></p>
-                <?php endwhile; ?>
-            <?php endif; ?>
         </div>
-
-        <!-- <div class="item"> El yoga, los perros, el crecimiento personal, organizar, planificar, las novelas y ahora último los bebés 🙂</div> -->
-
         <div class="wrapper">
-            <div class="item">
-                El yoga, los perros, el crecimiento personal, organizar, planificar, las novelas y ahora último los bebés 🙂
-            </div>
-            <div class="item">
-                El yoga, los perros, el crecimiento personal, organizar, planificar, las novelas y ahora último los bebés 🙂
-            </div>
+            <?php for ($i = 0; $i < 3; $i++): ?>
+                <div class="item">
+                    <?php the_field('main_text_primary'); ?>
+                </div>
+            <?php endfor; ?>
         </div>
     </section>
 
