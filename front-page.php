@@ -76,7 +76,7 @@
     </section>
 
     <section class="s-experience" id="experience">
-        <h2>Mi experiencia</h2>
+        <h2><?php the_field('work_title'); ?></h2>
 
         <!-- Swiper -->
         <?php echo get_template_part('template_parts/swiper' ); ?>

@@ -155,7 +155,7 @@ $pad: clamp(16px, 4.5vw, 50px);
 
 @mixin section-spacing {
 	section {
-		padding: $pad;
+		padding: $pad $pad 0;
 	}
 
 	section.no-pad {
